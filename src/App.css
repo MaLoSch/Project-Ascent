@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.tab-bar {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style: none;
+}

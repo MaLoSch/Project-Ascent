@@ -1,0 +1,19 @@
+.accordion-title {
+    cursor: pointer;
+    padding: 4px 4px 4px 0;
+    font-style: italic;
+    transition: all 0.25s ease-in-out;
+    color: #F2E9E6;
+}
+
+.accordion-title:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 0%, 100%, 0.1);
+}
+
+.accordion-content {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.25s ease-in-out;
+    padding: 4px;
+}

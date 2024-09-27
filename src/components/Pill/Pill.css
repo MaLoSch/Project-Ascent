@@ -1,0 +1,22 @@
+.pill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.pill {
+    color: #8C8785;
+    padding: 4px 8px;
+    border: 1px solid #262524;
+    display: inline-block;
+    line-height: 12px;
+    border-radius: 12px;
+    font-size: 8px;
+}
+
+.pill:not(:last-child) {
+    margin: 0 4px 0 0;
+}
