@@ -1,15 +1,14 @@
-import { useState } from "react";
+import { useEffect, useState } from "react"; // import required react modules
+import "./ClipImage.css" // import CSS file for component
 
-import img from "../../assets/0.jpg"
-import "./ClipImage.css"
+function ClipImage({ imageName = "default", range = 25}) {
 
-function ClipImage({type = "random", range = 25}) {
-
-    
+    // function to retrieve a random position for each corner of the polygon mask
     function randomPos() {
         return(Math.floor(Math.random()*range))
     }
     
+    // function when the image is clicked
     function handleClick() {
         setPoints(points => ({
             ...points,
@@ -40,23 +39,29 @@ function ClipImage({type = "random", range = 25}) {
         }
     );
 
-    switch(type) {
-        case 'random':
-            break;
-        case 'trapezoid':
-            break;
-        default:
-           break; 
-    }
+    const [imgSrc, setImgSrc] = useState(null)
+
+    useEffect(() => {
+        async function loadImage() {
+            try {
+                const image = await import(`../../assets/images/${imageName}.jpg`)
+                setImgSrc(image.default)
+            } catch (error) {
+                const fallbackImage = await import(`../../assets/images/default.jpg`)
+                setImgSrc(fallbackImage.default)
+            }
+        }
+        loadImage()
+    }, [imageName])
 
     return(
         <>
             <img
-                className="animate"
+                className="animate hero"
                 onClick={handleClick}
                 style={{
                 clipPath: `polygon(${points.x1}% ${points.y1}%,${points.x2}% ${points.y2}%,${points.x3}% ${points.y3}%,${points.x4}% ${points.y4}%)`,
-            }} src={img}></img>
+            }} src={imgSrc}></img>
         </>
     )
 }

@@ -19,7 +19,7 @@ function SingleExercise(props) {
             </section>
 
             <section>
-                <ClipImage type="random" range="10"></ClipImage>
+                <ClipImage imageName={exercise.heroImage} range="10"></ClipImage>
             </section>
 
             <section>
