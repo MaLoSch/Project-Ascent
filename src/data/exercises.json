@@ -97,6 +97,13 @@
       "description": "A structured climbing sequence that helps with strength and technique.",
       "howTo": "Climb increasingly difficult boulders in a pyramid sequence (e.g., easy, medium, hard, medium, easy). This method builds both strength and technique as you vary difficulty and intensity.",
       "heroImage": "boulderPyramid"
+    },
+    {
+      "name": "Plank",
+      "id": 14,
+      "description": "An exercise where you hold your body straight and parallel to the floor while resting on your toes and elbows.",
+      "howTo": "From lying face down on a mat and place your elbows under your shoulders. Place your toes onto the mat and then push your forearms as you raise your body from the mat. Engage your abdominal muscles and try and form a straight line with your whole body. Keep your gaze down while taking steady, even breaths.",
+      "heroImage": "plank"
     }
   ]
 }
