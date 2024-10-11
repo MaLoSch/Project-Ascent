@@ -8,8 +8,6 @@ function Exercises(props) {
 
     // state to keep track of exercises. Initial state is the full DB
     const [filteredExercises, setFilteredExercises] = useState(data);
-
-    console.log(filteredExercises)
     
     // filterList function to filter the list based on the search components input
     const filterList = (query) => {

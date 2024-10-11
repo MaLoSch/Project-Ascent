@@ -10,6 +10,12 @@ function SingleExercise(props) {
 
     const exercise = data.find(ex => ex.id === parseInt(id))
 
+    // little helper function to convert the first character of a string to uppercase
+    function toUpperCase(string) {
+        const str = string[0].toUpperCase() + string.slice(1);
+        return str;
+    }
+
     return(
         <>
         <div className='page-content'>
@@ -30,10 +36,9 @@ function SingleExercise(props) {
 
             <section>
                 <div className="pill-container">
-                    <Pill>This is my pill text</Pill>
-                    <Pill>This is another pill</Pill>
-                    <Pill>Strength</Pill>
-                    <Pill>Core</Pill>
+                    {exercise.effect.map((item) => (
+                        <Pill>{toUpperCase(item)}</Pill>
+                    ))}
                 </div>
             </section>
         </div>

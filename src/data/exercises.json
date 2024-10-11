@@ -119,6 +119,14 @@
       "howTo": "From lying face down on a mat and place your elbows under your shoulders. Place your toes onto the mat and then push your forearms as you raise your body from the mat. Engage your abdominal muscles and try and form a straight line with your whole body. Keep your gaze down while taking steady, even breaths.",
       "heroImage": "plank",
       "effect": ["core"]
+    },
+    {
+      "name": "ENOM",
+      "id": 15,
+      "description": "Compared to classic 4x4s, ENOMs (Every Minute On the Minute) may allow you to improve your anaerobic endurance for a longer sustained time.",
+      "howTo": "Choose a moderate boulder and set a timer to 1 minute. Climb the boulder and rest for the remainder of the minute. At the start of the next minute, climb the boulder again. Do this for 4 to 10 minutes to complete a set and aim for 1-3 sets.",
+      "heroImage": "enom",
+      "effect": ["anaerobic endurance", "strength endurance"]
     }
   ]
 }
