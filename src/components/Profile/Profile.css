@@ -1,0 +1,22 @@
+/* the container with all the profile information */
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* every item inside profile receives the following style */
+.profile *:not(:first-child) {
+    padding-top: 16px;
+}
+
+/* the profile picture */
+.profile .pic {
+    width: 256px;
+    height: 256px;
+    border-radius: 100%;
+}
+
+.profile .given-name {
+    font-weight: bold;
+}

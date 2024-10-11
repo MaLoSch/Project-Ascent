@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, Link, Outlet } from 'react-router-dom'
 import './App.css'
-import Header from './components/Header/Header'
 import Exercises from './components/Exercises/Exercises'
 import SingleExercise from './components/SingleExercise/SingleExercise'
 import Profile from './components/Profile/Profile'

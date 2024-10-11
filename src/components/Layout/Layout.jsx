@@ -9,7 +9,7 @@ function Layout(props) {
         <>
             <Header data={data} />
             <main>
-                <Outlet />
+                { <Outlet /> }
             </main>
         </>
     )
