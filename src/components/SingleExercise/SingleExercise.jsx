@@ -36,8 +36,8 @@ function SingleExercise(props) {
 
             <section>
                 <div className="pill-container">
-                    {exercise.effect.map((item) => (
-                        <Pill>{toUpperCase(item)}</Pill>
+                    {exercise.effect.map((item, id) => (
+                        <Pill key={id}>{toUpperCase(item)}</Pill>
                     ))}
                 </div>
             </section>

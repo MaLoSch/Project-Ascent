@@ -39,6 +39,7 @@ function Header(props) {
                 <img className="header-title" src={pa} />
                 <img src={filter_icon} />
             </div>
+            {/* */}
             <Marquee>{getTitle()}</Marquee>
         </>
     )

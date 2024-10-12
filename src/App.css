@@ -3,12 +3,14 @@
 }
 
 #root {
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 800px; /* max-width to prevent app getting bigger than specified width */
+  width: 100%; /* required because of the Marquee component. Otherwise app does not scale down properly */
+  margin: 0 auto; /* center app when window is larger than app */
   text-align: left;
 }
 
 .tab-bar {
+  padding: 0;
   display: flex;
   justify-content: space-around;
 }
