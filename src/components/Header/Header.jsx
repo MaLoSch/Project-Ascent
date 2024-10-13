@@ -1,4 +1,4 @@
-import { useLocation, useParams } from 'react-router-dom'
+import { useLocation, useParams, Link } from 'react-router-dom'
 import './Header.css'
 import filter_icon from "../../assets/filter_24dp.svg"
 import menu_icon from "../../assets/menu_24dp.svg"
@@ -36,7 +36,9 @@ function Header(props) {
         <>
             <div className="header">
                 <img src={menu_icon} />
-                <img className="header-title" src={pa} />
+                <Link to='/'>
+                    <img className="header-title" src={pa} />
+                </Link>
                 <img src={filter_icon} />
             </div>
             {/* */}

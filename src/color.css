@@ -1,0 +1,24 @@
+/* scope of the color variables */
+:root {
+    --grey-white: #F3F2F2;
+    --grey-85: #DAD8D8;
+    --grey-75: #C1BEBD;
+    --grey-65: #A8A4A3;
+    --grey-55: #908A89;
+    --grey-45: #76716F;
+    --grey-35: #5C5857;
+    --grey-25: #423F3E;
+    --grey-15: #272625;
+    --grey-black: #0D0C0C;
+
+    --orange-white: #FEECE7;
+    --orange-85: #FBC5B7;
+    --orange-75: #F89F87;
+    --orange-65: #F57956;
+    --orange-55: #F25226;
+    --orange-45: #D9390D;
+    --orange-35: #A92C0A;
+    --orange-25: #782007;
+    --orange-15: #481304;
+    --orange-black: #180601;
+}

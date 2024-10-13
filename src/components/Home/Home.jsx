@@ -1,7 +1,10 @@
+import Cover from "../../assets/cover.jpg"
+import "./Home.css"
+
 function Home() {
     return(
         <>
-        <p>Home</p>
+        <img className="cover-image" src={Cover} />
         </>
     )
 }

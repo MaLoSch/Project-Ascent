@@ -1,5 +1,6 @@
 import "./ExerciseListItem.css"; // import the css file for this component
 import { Link } from 'react-router-dom'
+import ArrowForward from '@mui/icons-material/ArrowForward'
 
 function ExerciseListItem(props) {
 
@@ -8,7 +9,8 @@ function ExerciseListItem(props) {
     return(
         <>
             <Link to={`/exercises/${id}`}>
-                <div className="exerciseListItem">    
+                <div className="exerciseListItem">
+                    <ArrowForward />    
                     <p className="exerciseListTitle">{title}</p>
                 </div>
             </Link>

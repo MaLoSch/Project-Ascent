@@ -42,6 +42,7 @@ const Timer = () => {
       ) : (
         <button onClick={handleStop}>Stop</button>
       )}
+      
       <button onClick={handleReset}>Reset</button>
     </div>
   );
