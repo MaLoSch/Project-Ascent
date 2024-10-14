@@ -7,7 +7,6 @@
     overflow: hidden;
     display: flex;
     align-items: center;
-    margin-bottom: 32px;
 }
 
 .marquee-container p {

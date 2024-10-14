@@ -1,10 +1,10 @@
-import Cover from "../../assets/cover.jpg"
 import "./Home.css"
+import ClipImage from "../ClipImage/ClipImage"
 
 function Home() {
     return(
         <>
-        <img className="cover-image" src={Cover} />
+        <ClipImage imageName="cover" range="5" height="auto" />
         </>
     )
 }
