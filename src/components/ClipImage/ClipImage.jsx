@@ -1,7 +1,12 @@
 import { useEffect, useState } from "react"; // import required react modules
 import "./ClipImage.css" // import CSS file for component
 
-function ClipImage({ imageName = "default", range = 25, height="auto"}) {
+function ClipImage({ imageName = "default", range = 8, height="auto", className=""}) {
+
+    // imageName -> The name of the image that should be pulled (currently they all need to be in the same folder)
+    // range -> how much "movement" is in the image corners
+    // height -> how tall should the image be displayed
+    // className -> animate, hero
 
     // function to retrieve a random position for each corner of the polygon mask
     function randomPos() {
@@ -56,13 +61,14 @@ function ClipImage({ imageName = "default", range = 25, height="auto"}) {
 
     return(
         <>
-            <img
-                className="animate hero"
+             <div className={className}
                 onClick={handleClick}
-                style={{
+                style= {{
                     clipPath: `polygon(${points.x1}% ${points.y1}%,${points.x2}% ${points.y2}%,${points.x3}% ${points.y3}%,${points.x4}% ${points.y4}%)`,
                     height: `${height}`,
-            }} src={imgSrc}></img>
+                    backgroundImage: `url(${imgSrc})`
+                }}
+            ></div>
         </>
     )
 }

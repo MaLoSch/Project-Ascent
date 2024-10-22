@@ -25,7 +25,7 @@ function SingleExercise(props) {
             </section>
 
             <section>
-                <ClipImage imageName={exercise.heroImage} range="10"></ClipImage>
+                <ClipImage imageName={exercise.heroImage} range="5" height="320px" className="animate"></ClipImage>
             </section>
 
             <section>

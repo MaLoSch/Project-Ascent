@@ -10,9 +10,9 @@ image {
 .animate {
     transition: clip-path 0.5s ease-in-out;
     width: 100%;
-    height: 300px;
-    object-fit: cover;
-    object-position: center center;
+    /* height is set programatically */
+    background-size: cover;
+    background-position: center center;
 }
 
 .hero {
