@@ -8,4 +8,4 @@ This is a description of the project
 This is the roadmap description
 
 ## To-Do
-[] Some to-do list item
+- [ ] Some to-do list item
