@@ -26,8 +26,7 @@ For MVP 1 the following functionality should be available.
 
 ## Roadmap
 ### MVP 2
-For the next MVP I'd like to improve on the timer. It should be able to handle sets, set rests, repetitions, and repetitions rests. Furthermore I'd like to provide default timer settings for each exercise. The timer itself can be started from the exercise page and and the timer will then be set to the default exercise timer settings.
-Additionally, I'd like to make some visual improvements and add a few more exercises.
+For the next MVP I'd like to improve on the timer. It should be able to handle sets, set rests, repetitions, and repetition rests. Furthermore I'd like to provide default timer information for each exercise. The timer itself can be started from the exercise page and and the timer will then be set to the default exercise timer information (i.e. how many sets, set rest lenght, how many repetitions, repetition rest lenght). Additionally, I'd like to make some visual improvements.
 
 ### MVP 3
 Main task will be the deployment on a server and establish a back end with Mongo DB, Express and Node. I'd also like to add tags to each exercises and implement a filter functionality on the exercises overview page. Potentially start work on responsive design.
@@ -37,3 +36,11 @@ Main task will be the deployment on a server and establish a back end with Mongo
 
 ### MVP 5
 - Logbook for each account and ability to comment on exercises
+
+### Each iteration
+- Bug improvements
+- Visual upgrades
+- More exercises
+
+## Knows bugs
+Nothing to see here. For now... :D
