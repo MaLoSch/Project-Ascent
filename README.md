@@ -20,6 +20,11 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
 
 ### To-Do for current MVP
 - [ ] Home page
+    - [ ] Image to stretch over the available space
+    - [ ] Image to change (random or after a certain time)
+- [ ] Clip image component
+    - [ ] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
+    - [ ] Allow animation
 - [ ] CSS for general app structure
     - [ ] Use of flex box
 - [ ] Bottom navigation
@@ -43,20 +48,35 @@ Main task will be the deployment on a server and establish a back end with Mongo
 - More exercises
 
 # Backlog
+
+A list of features that have not been assigned to a specific MVP version yet.
+
+- General
+    - Light / Dark Mode
 - Timer
     - Make the timer visually distinct between running and pausing
     - Add sounds to the timer
     - Show timer on other pages when running
-- Account creation
+- Account
+    - Ability to create, edit and delete accounts
+    - Upload your own image
+    - Change password
+    - Login screen
+        - Forgot password
+        - Sign Up
 - Training plan
-    - Abilty to create training lists and training plans
-    - Guide to create a training plan
+    - Abilty to create training lists / plans
+    - Guide to create a training plan with help from a chat bot / wizard / or similar
 - Exercises
     - Show exercises improvements in a graph
     - Create images for exercises
     - Create descriptions and How-to's for exercises
     - Add exercise variations
-    - Gather information how difficult an exercise was
+    - Gather exercise metrics
+        - Perceived difficulty
+        - Weights used
+        - Comments
+        - etc.
 
 ## Knows bugs
 Nothing to see here. For now... :D
