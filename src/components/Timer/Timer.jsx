@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import './Timer.scss'
 
 const Timer = () => {
   const [time, setTime] = useState(0);  // Time in seconds

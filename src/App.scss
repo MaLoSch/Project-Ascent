@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  // outline: 1px solid red;
+}
+
+#app {
+  width: 100%; // set width of the app to 100%
+  display: grid; // CSS grid is used for the general layout
+  grid-template-rows: auto 1fr auto; // 1 row auto, 1 row grows, 1 row auto
+  height: 100vh; // height is set to 100vh
+}

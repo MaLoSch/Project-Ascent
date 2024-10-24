@@ -1,0 +1,22 @@
+.marquee-container {
+    background-color: var(--grey-black); // set background color of the marquee
+    height: auto; // set height of the marquee
+    display: flex;
+    flex-direction: row; // items next to each other
+    align-items: center; // center items vertically
+}
+
+.marquee-container p {
+    animation: marquee infinite 21s linear;
+    color: var(--grey-25);
+    font-size: 1.25rem;
+    padding: 0 4px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    flex-basis: auto;
+}
+
+@keyframes marquee {
+    from {transform: translateX(0%);}
+    to {transform: translateX(-100%);}
+}

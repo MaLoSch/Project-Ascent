@@ -1,4 +1,4 @@
-import "./Search.css"
+import "./Search.scss"
 import { useState } from "react"
 
 function Search(props)  {

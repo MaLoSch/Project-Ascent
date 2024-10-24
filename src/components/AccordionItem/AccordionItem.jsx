@@ -1,5 +1,5 @@
 import {useRef, useState} from 'react' // import required react properties
-import "./AccordionItem.css"; // import accordion stylesheet
+import "./AccordionItem.scss"; // import accordion stylesheet
 
 // main accordion function with children prop and title prop (using a default value)
 function AccordionItem({children, title="Some other title"}) {

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"; // import required react modules
-import "./ClipImage.css" // import CSS file for component
+import "./ClipImage.scss" // import CSS file for component
 
 function ClipImage({ imageName = "default", range = 8, height="auto", className=""}) {
 

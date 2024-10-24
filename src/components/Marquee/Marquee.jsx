@@ -1,4 +1,4 @@
-import "./Marquee.css"
+import "./Marquee.scss"
 
 function Marquee(props) {
 

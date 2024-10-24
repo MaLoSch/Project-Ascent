@@ -27,18 +27,19 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
     - [ ] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
     - [ ] Allow animation
 - [ ] CSS for general app structure
-    - [ ] Use of flex box
+    - [ ] Fix bugs with general layout
+    - [x] Use of grid instead of flexbox for future scaleability
 - [ ] Bottom navigation
     - [x] Add logic to highlight active page
     - [x] Add icon placeholder
-    - [ ] Add icon from Google Fonts
+    - [x] Add icon from Google Fonts
     - [ ] Finish styling of bottom nav
 - [ ] CSS for search component
 - [ ] Import correct font
     - [ ] Add font to gitignore
     - [ ] Make sure there is a default font
 - [ ] Add comments to all files
-- [ ] Install SASS for easier CSS management
+- [x] Install SASS for easier CSS management
 
 ## MVP 2
 For the next MVP I'd like to improve on the timer. It should be able to handle sets, set rests, repetitions, and repetition rests. Furthermore I'd like to provide default timer information for each exercise. The timer itself can be started from the exercise page and and the timer will then be set to the default exercise timer information (i.e. how many sets, set rest lenght, how many repetitions, repetition rest lenght). Additionally, I'd like to make some visual improvements.

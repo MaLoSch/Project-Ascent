@@ -1,48 +1,23 @@
-import { useLocation, useParams, Link } from 'react-router-dom'
-import './Header.css'
-import filter_icon from "../../assets/filter_24dp.svg"
-import menu_icon from "../../assets/menu_24dp.svg"
-import Marquee from "../Marquee/Marquee"
+import { Link } from 'react-router-dom'
+import './Header.scss'
+import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
+import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import pa from "../../assets/PA.svg"
 
-function Header(props) {
-
-    const { data } = props;
-    const location = useLocation();
-    const { id } = useParams();
-
-    const getExerciseTitle = (id) => {
-        const exercise = data.find(ex => ex.id === parseInt(id));
-        return exercise ? exercise.name : "Exersise not found";
-    }
-
-    const getTitle = () => {
-        switch(location.pathname) {
-            case "/exercises":
-                return "Exercises";
-            case "/timer":
-                return "Timer";
-            case "/profile":
-                return "Profile";
-            default:
-                if(location.pathname.startsWith("/exercises/")) {
-                    return getExerciseTitle(id);
-                }
-                return "Project Ascent";
-        }
-    }
-
+function Header() {
     return(
         <>
-            <div className="header">
-                <img src={menu_icon} />
+            <div id="header">
+                {/* <MenuOutlinedIcon /> Hiding menu for now as it is not required at the moment */ }
                 <Link to='/'>
-                    <img className="header-title" src={pa} />
+                    <span>Project</span>
+                    <span>
+                        <img className="header-title" src={pa} />
+                    </span>
+                    <span>Ascent</span>
                 </Link>
-                <img src={filter_icon} />
+                {/* <FilterAltOutlinedIcon /> Hiding filtering icon for now as the functionality is not available at the moment */ }
             </div>
-            {/* */}
-            <Marquee>{getTitle()}</Marquee>
         </>
     )
 }

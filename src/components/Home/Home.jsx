@@ -1,4 +1,4 @@
-import "./Home.css"
+import "./Home.scss"
 import ClipImage from "../ClipImage/ClipImage"
 
 function Home() {

@@ -1,4 +1,4 @@
-import "./ExerciseListItem.css"; // import the css file for this component
+import "./ExerciseListItem.scss"; // import the css file for this component
 import { Link } from 'react-router-dom'
 import ArrowForward from '@mui/icons-material/ArrowForward'
 

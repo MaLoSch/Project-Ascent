@@ -1,4 +1,4 @@
-import "./Pill.css"
+import "./Pill.scss"
 
 function Pill(props) {
     return(

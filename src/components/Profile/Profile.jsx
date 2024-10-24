@@ -1,5 +1,5 @@
 import profilePic from "../../assets/profile.jpg"
-import "./Profile.css"
+import "./Profile.scss"
 
 function Profile() {
     return(

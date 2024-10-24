@@ -1,5 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
-import './TabBar.css'
+import FitnessCenterOutlinedIcon from '@mui/icons-material/FitnessCenterOutlined';
+import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
+import FaceOutlinedIcon from '@mui/icons-material/FaceOutlined';
+import './TabBar.scss'
 
 function TabBar(){
 
@@ -12,22 +15,20 @@ function TabBar(){
 
     return(
         <>
-            <nav className='main-nav'>
-                <ul className='tab-bar'>
-                    <li className={isActive('/exercises') ? 'active' : ''}>
-                        <div className="link-icon"></div>
-                        <Link to='/exercises'>Exercises</Link>
-                    </li>
-                    <li className={isActive('/timer') ? 'active' : ''}>
-                        <div className="link-icon"></div>
-                        <Link to='/timer'>Timer</Link>
-                    </li>
-                    <li className={isActive('/profile') ? 'active' : ''}>
-                        <div className="link-icon"></div>
-                        <Link to='/profile'>Profile</Link>
-                    </li>
-                </ul>
-            </nav>
+            <ul className='tab-bar'>
+                <li className={isActive('/exercises') ? 'active' : ''}>
+                    <FitnessCenterOutlinedIcon />
+                    <Link to='/exercises'>Exercises</Link>
+                </li>
+                <li className={isActive('/timer') ? 'active' : ''}>
+                    <TimerOutlinedIcon />
+                    <Link to='/timer'>Timer</Link>
+                </li>
+                <li className={isActive('/profile') ? 'active' : ''}>
+                    <FaceOutlinedIcon />
+                    <Link to='/profile'>Profile</Link>
+                </li>
+            </ul>
         </>
     )
 }

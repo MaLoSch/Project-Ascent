@@ -1,0 +1,37 @@
+.tab-bar {
+    display: flex;
+    justify-content: space-around;
+
+    & li {
+        display: flex;
+        flex-direction: row;
+        flex: 1 1 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.25s ease-in-out;
+        border-bottom: 1px solid var(--grey-black);
+        padding: 16px 0;
+
+        &.active {
+            border-bottom: 1px solid var(--grey-white); // set color when active
+
+            & a,svg {
+                color: var(--grey-white); // set color when active
+            }
+        }
+
+        & a {
+            font-size: 1rem; // set font size
+            color: var(--grey-75); // set color
+            transition: inherit; // inherit transition from parent element
+        }
+
+        & svg {
+            width: 20px; // set width
+            height: 20px; // set height
+            margin-right: 4px; // set distance between icon and right element
+            color: var(--grey-75); // set color
+            transition: inherit; // inherit transition from parent element
+        }
+    }
+}
