@@ -22,13 +22,12 @@
 
         & a {
             font-size: 1rem; // set font size
-            color: var(--grey-75); // set color
             transition: inherit; // inherit transition from parent element
         }
 
         & svg {
-            width: 20px; // set width
-            height: 20px; // set height
+            width: 12px; // set width
+            height: 12px; // set height
             margin-right: 4px; // set distance between icon and right element
             color: var(--grey-75); // set color
             transition: inherit; // inherit transition from parent element

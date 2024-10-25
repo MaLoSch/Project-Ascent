@@ -17,15 +17,15 @@ function TabBar(){
         <>
             <ul className='tab-bar'>
                 <li className={isActive('/exercises') ? 'active' : ''}>
-                    <FitnessCenterOutlinedIcon />
+                    <FitnessCenterOutlinedIcon fontSize="12px"/>
                     <Link to='/exercises'>Exercises</Link>
                 </li>
                 <li className={isActive('/timer') ? 'active' : ''}>
-                    <TimerOutlinedIcon />
+                    <TimerOutlinedIcon fontSize="12px"/>
                     <Link to='/timer'>Timer</Link>
                 </li>
                 <li className={isActive('/profile') ? 'active' : ''}>
-                    <FaceOutlinedIcon />
+                    <FaceOutlinedIcon fontSize="12px"/>
                     <Link to='/profile'>Profile</Link>
                 </li>
             </ul>

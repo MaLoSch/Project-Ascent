@@ -23,20 +23,24 @@ function Exercises(props) {
 
     return(
         <>
-            <Search filterList={filterList} /> {/* Seaech component receives filterList function as a prop */}
+            <section className='side-padding'>
+                <Search filterList={filterList} /> {/* Seaech component receives filterList function as a prop */}
+            </section>
             
-            {filteredExercises.length === 0
-                ? <p>No exercises found</p>
-                : <>
-                    {filteredExercises.map((item) => (
-                        <ExerciseListItem
-                            key={item.id}
-                            id={item.id} 
-                            title={item.name} 
-                        />
-                    ))}
-                </>
-            }
+            <section className='side-padding'>
+                {filteredExercises.length === 0
+                    ? <p>No exercises found</p>
+                    : <>
+                        {filteredExercises.map((item) => (
+                            <ExerciseListItem
+                                key={item.id}
+                                id={item.id} 
+                                title={item.name} 
+                            />
+                        ))}
+                    </>
+                }
+            </section>
         </>
     )
 }

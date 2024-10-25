@@ -36,7 +36,7 @@ function Layout(props) {
     // function to check if we should display the marquee or not
     const displayMarquee = (path) => {
         // check if the pathname is unequal to path and return result (true / false)
-        return true
+        //return true
         return location.pathname === path;
     }
 
@@ -44,10 +44,10 @@ function Layout(props) {
         <>
             <header>
                 <Header />
-            </header>
-            <main>
                 {/* Conditional rendering of the Marquee as it should NOT be displayed on the home page ('/') */}
                 {displayMarquee('/') ? <></> : <Marquee>{getTitle()}</Marquee> }
+            </header>
+            <main className={displayMarquee('/') ? '' : 'extra-padding'}>
                 { <Outlet /> }
             </main>
             <nav>

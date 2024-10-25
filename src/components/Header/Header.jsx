@@ -4,7 +4,8 @@ import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import pa from "../../assets/PA.svg"
 
-function Header() {
+function Header(props) {
+        
     return(
         <>
             <div id="header">
@@ -12,7 +13,7 @@ function Header() {
                 <Link to='/'>
                     <span>Project</span>
                     <span>
-                        <img className="header-title" src={pa} />
+                        <img className="app-logo" src={pa} />
                     </span>
                     <span>Ascent</span>
                 </Link>

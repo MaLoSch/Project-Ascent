@@ -20,7 +20,7 @@ function SingleExercise(props) {
         <>
         <div className='page-content'>
             
-            <section>
+            <section className='side-padding'>
                 <p>{exercise.description}</p>
             </section>
 
@@ -28,13 +28,13 @@ function SingleExercise(props) {
                 <ClipImage imageName={exercise.heroImage} range="5" height="320px" className="animate"></ClipImage>
             </section>
 
-            <section>
+            <section className='side-padding'>
             <AccordionItem title="How to">
                 <p>{exercise.howTo}</p>
             </AccordionItem>
             </section>
 
-            <section>
+            <section className='side-padding'>
                 <div className="pill-container">
                     {exercise.effect.map((item, id) => (
                         <Pill key={id}>{toUpperCase(item)}</Pill>

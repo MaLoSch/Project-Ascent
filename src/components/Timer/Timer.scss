@@ -1,0 +1,26 @@
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+    & .timer-controls {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        & button {
+            padding: 16px;
+            flex: 0 1 100%;
+            background-color: var(--grey-black);
+            border: none;
+            font-style: italic;
+
+            &:not(:first-child) {
+                margin: 0 0 0 16px;
+            }
+        }
+    }
+}

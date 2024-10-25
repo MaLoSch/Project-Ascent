@@ -4,6 +4,7 @@ import './Timer.scss'
 const Timer = () => {
   const [time, setTime] = useState(0);  // Time in seconds
   const [isRunning, setIsRunning] = useState(false);  // Track if the timer is running
+  const [isStopped, setIsStopped] = useState(false); // Track if the timer is stopped
 
   useEffect(() => {
     let intervalId;
@@ -19,10 +20,17 @@ const Timer = () => {
     return () => clearInterval(intervalId);
   }, [isRunning]);
 
-  const handleStart = () => setIsRunning(true);
-  const handleStop = () => setIsRunning(false);
+  const handleStart = () => {
+    setIsRunning(true);
+    setIsStopped(false);
+  };
+  const handleStop = () => {
+    setIsRunning(false);
+    setIsStopped(true);
+  };
   const handleReset = () => {
     setIsRunning(false);
+    setIsStopped(false);
     setTime(0);
   };
 
@@ -36,16 +44,21 @@ const Timer = () => {
   };
 
   return (
-    <div>
-      <h1>{formatTime(time)}</h1>
-      {!isRunning ? (
-        <button onClick={handleStart}>Start</button>
-      ) : (
-        <button onClick={handleStop}>Stop</button>
-      )}
-      
-      <button onClick={handleReset}>Reset</button>
-    </div>
+    <>
+      <section className="timer-container full-height side-padding">
+        <div className="timer-counter">
+          <h1>{formatTime(time)}</h1>
+        </div>
+        <div className="timer-controls">
+          {!isRunning ? (
+            <button onClick={handleStart}>{isStopped ? "Resume" : "Start"}</button>
+          ) : (
+            <button onClick={handleStop}>Stop</button>
+          )}
+          {isStopped ? <button onClick={handleReset}>Reset</button> : <></>}
+        </div>
+      </section>
+    </>
   );
 };
 

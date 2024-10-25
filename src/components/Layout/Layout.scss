@@ -1,0 +1,21 @@
+header, nav {
+    position: fixed; // fixed position so it does not scroll
+    background-color: var(--grey-black); // set background color so elements behind are not visible
+    width: 100%; // set width
+}
+
+header {
+    top: 0; // position at top 
+}
+
+main {
+    padding: 53px 0 54px;
+
+    &.extra-padding {
+        padding-top: calc(53px + 32px);
+    }
+}
+
+nav {
+    bottom: 0; // position at bottom
+}

@@ -10,3 +10,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+  text-decoration: none; // links do not have an underline
+  color: var(--grey-75); // set color
+}

@@ -4,7 +4,9 @@ import ClipImage from "../ClipImage/ClipImage"
 function Home() {
     return(
         <>
-        <ClipImage imageName="cover" range="5" height="500px" className="animate hero" />
+        <section className="full-height">
+            <ClipImage imageName="cover" range="5" height="100%" className="animate hero" />
+        </section>
         </>
     )
 }

@@ -10,7 +10,7 @@ function ExerciseListItem(props) {
         <>
             <Link to={`/exercises/${id}`}>
                 <div className="exerciseListItem">
-                    <ArrowForward />    
+                    <ArrowForward fontSize="12px"/>    
                     <p className="exerciseListTitle">{title}</p>
                 </div>
             </Link>
