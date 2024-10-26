@@ -21,7 +21,7 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
 ### To-Do for current MVP
 - [ ] Organize tasks by priority
 - [ ] Home page
-    - [ ] Image to stretch over the available space
+    - [x] Image to stretch over the available space
     - [ ] Image to change (random or after a certain time)
 - [ ] Clip image component
     - [ ] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
