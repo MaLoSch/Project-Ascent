@@ -11,7 +11,7 @@ function Marquee(props) {
         <>
             <div className="marquee-container">
                 {marqueeArray.map((item, index) => (
-                    <p key={index}>{item}</p>
+                    <p key={index}>{item}<span>&nbsp;&bull;&nbsp;</span></p>
                 ))}
             </div>
         </>

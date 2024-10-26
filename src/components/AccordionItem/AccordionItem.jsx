@@ -1,4 +1,5 @@
 import {useRef, useState} from 'react' // import required react properties
+import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 import "./AccordionItem.scss"; // import accordion stylesheet
 
 // main accordion function with children prop and title prop (using a default value)
@@ -21,9 +22,13 @@ function AccordionItem({children, title="Some other title"}) {
 
     return(
         <>
-        <div>
-            {/* comment if required */}
-            <p className="accordion-title" onClick={toggleAccordion}>{title}</p>
+        <div className="accordion">
+            <div onClick={toggleAccordion} className={`accordion-heading ${isOpen ? 'active' : ''}`}>
+                <div className="accordion-icon">
+                    <ExpandMoreOutlinedIcon fontSize='16px'/>
+                </div>
+                <p className="accordion-title">{title}</p>
+            </div>
             <div ref={contentRef} className={`accordion-content ${isOpen ? 'active' : ''}`} style={{ height: `${height}px`}}>
                 {children}
             </div>

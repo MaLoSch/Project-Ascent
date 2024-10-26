@@ -1,7 +1,25 @@
 #header {
     padding: 16px 12px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
+    & .left-header {
+        flex: 0 1 25%;
+        display: flex;
+        //font-size: .75rem;
+        padding: 0 0 0 4px;
+        cursor: pointer;
+    }
+
+    & .middle-header {
+        flex: 0 1 50%;
+        display: flex;
+        justify-content: center;
+    }
+
+    & .right-header {
+        flex: 0 1 25%;
+    }
 }
 
 .app-logo {

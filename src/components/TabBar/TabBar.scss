@@ -1,36 +1,50 @@
-.tab-bar {
+ul.tab-bar {
     display: flex;
     justify-content: space-around;
+    list-style: none;
 
     & li {
-        display: flex;
-        flex-direction: row;
-        flex: 1 1 100%;
-        justify-content: center;
-        align-items: center;
-        transition: all 0.25s ease-in-out;
-        border-bottom: 1px solid var(--grey-black);
-        padding: 16px 0;
-
-        &.active {
-            border-bottom: 1px solid var(--grey-white); // set color when active
-
-            & a,svg {
-                color: var(--grey-white); // set color when active
-            }
-        }
+        flex: 0 1 100%;
 
         & a {
-            font-size: 1rem; // set font size
-            transition: inherit; // inherit transition from parent element
-        }
+            padding: 16px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--grey-75);
+            border-bottom: 1px solid var(--grey-black);
+            transition: all 0.25s ease-in-out;
+            position: relative;
 
-        & svg {
-            width: 12px; // set width
-            height: 12px; // set height
-            margin-right: 4px; // set distance between icon and right element
-            color: var(--grey-75); // set color
-            transition: inherit; // inherit transition from parent element
+            &:hover {
+                color: var(--grey-white);
+            }
+
+            &.active {
+                color: var(--orange-55);
+                border-bottom: 1px solid var(--orange-55);
+                
+                & .tab-bar-icon {
+                    transform: translateX(-4px);
+                }
+
+                & .tab-bar-title {
+                    opacity: 1;
+                    transform: translateX(4px);
+                }
+            }
+
+            & .tab-bar-icon {
+                transition: inherit;
+                transform: translateX(175%);
+            }
+
+            & .tab-bar-title {
+                transition: inherit;
+                opacity: 0;
+                transform: translateX(-100%);
+                color: inherit;
+            }
         }
     }
 }

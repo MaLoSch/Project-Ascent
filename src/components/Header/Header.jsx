@@ -1,23 +1,55 @@
-import { Link } from 'react-router-dom'
-import './Header.scss'
+import { 
+    Link, // required to navigate to different pages
+    useNavigate // required for back button functionality
+} from 'react-router-dom'
+import './Header.scss' // import the scss for this component
 import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
 import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import pa from "../../assets/PA.svg"
 
-function Header(props) {
-        
+function Header({type = "nav"}) {
+
+    const navigate = useNavigate();
+    
+    const showBackButton = () => {
+        if(type === "timer") {
+            return(
+                <div className="back-button" onClick={() => {navigate(-1)}}>
+                    <span><ArrowBackOutlinedIcon fontSize='12px'/></span>
+                    <span>Back</span>
+                </div>
+            )
+        } else {
+            return(
+                <div className="menu-button">
+                    <MenuOutlinedIcon /> {/* Hiding menu for now as it is not required at the moment */ }
+                </div>
+            )
+        }
+    }
+    
     return(
         <>
             <div id="header">
-                {/* <MenuOutlinedIcon /> Hiding menu for now as it is not required at the moment */ }
-                <Link to='/'>
-                    <span>Project</span>
-                    <span>
-                        <img className="app-logo" src={pa} />
-                    </span>
-                    <span>Ascent</span>
-                </Link>
-                {/* <FilterAltOutlinedIcon /> Hiding filtering icon for now as the functionality is not available at the moment */ }
+                {/** onClick nafigate(-1) is the back button functionality provided by react-router-dom */}
+                <div className="left-header">
+                    { showBackButton() }
+                </div>
+                
+                <div className="middle-header">
+                    <Link to='/'>
+                        <span>Project</span>
+                        <span>
+                            <img className="app-logo" src={pa} />
+                        </span>
+                        <span>Ascent</span>
+                    </Link>
+                </div>
+
+                <div className="right-header">
+                    {/* <FilterAltOutlinedIcon /> Hiding filtering icon for now as the functionality is not available at the moment */ }
+                </div>
             </div>
         </>
     )

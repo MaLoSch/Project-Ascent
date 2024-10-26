@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom'
 import AccordionItem from '../../components/AccordionItem/AccordionItem'
 import ClipImage from '../../components/ClipImage/ClipImage'
 import Pill from '../../components/Pill/Pill'
+import Meta from '../../components/Meta/Meta'
 
 function SingleExercise(props) {
 
@@ -20,18 +21,8 @@ function SingleExercise(props) {
         <>
         <div className='page-content'>
             
-            <section className='side-padding'>
-                <p>{exercise.description}</p>
-            </section>
-
             <section>
-                <ClipImage imageName={exercise.heroImage} range="5" height="320px" className="animate"></ClipImage>
-            </section>
-
-            <section className='side-padding'>
-            <AccordionItem title="How to">
-                <p>{exercise.howTo}</p>
-            </AccordionItem>
+                <ClipImage imageName={exercise.heroImage} range="5" height="160px" className="animate"></ClipImage>
             </section>
 
             <section className='side-padding'>
@@ -40,6 +31,22 @@ function SingleExercise(props) {
                         <Pill key={id}>{toUpperCase(item)}</Pill>
                     ))}
                 </div>
+            </section>
+
+            <section>
+                <Meta effort={exercise.effort} time={exercise.time}></Meta>
+            </section>
+
+            <section className='side-padding'>
+                <AccordionItem title="Description">
+                    <p>{exercise.description}</p>
+                </AccordionItem>
+            </section>
+
+            <section className='side-padding'>
+                <AccordionItem title="How to">
+                    <p>{exercise.howTo}</p>
+                </AccordionItem>
             </section>
         </div>
         </>

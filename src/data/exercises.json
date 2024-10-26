@@ -6,7 +6,9 @@
       "description": "A great endurance exercise to keep you moving for extended periods.",
       "howTo": "Perform continuous, low-intensity climbing for 10 minutes on easy terrain, focusing on smooth, controlled movements. This helps build endurance without straining muscles.",
       "heroImage": "arc10",
-      "effect": ["endurance"]
+      "effect": ["endurance"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "1 on 1 off active",
@@ -14,7 +16,9 @@
       "description": "Alternating between activity and rest helps maintain balance and stamina.",
       "howTo": "Alternate between one minute of climbing and one minute of rest. During the active phase, climb steadily, and use the rest phase to recover while staying active with light movements.",
       "heroImage": "1on1off",
-      "effect": ["endurance"]
+      "effect": ["endurance"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "50:50",
@@ -22,7 +26,9 @@
       "description": "This training method splits your efforts equally for better results.",
       "howTo": "Climb for 50% of your maximum intensity for an extended period, then rest for an equal amount of time. This alternating pattern trains both endurance and power recovery.",
       "heroImage": "50-50",
-      "effect": ["unknown"]
+      "effect": ["unknown"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "7:3s",
@@ -30,7 +36,9 @@
       "description": "Focus on short bursts of effort with this high-intensity drill.",
       "howTo": "Hang on a fingerboard for 7 seconds, then rest for 3 seconds. Repeat for several cycles. This helps build finger strength and endurance for short, intense holds.",
       "heroImage": "73s",
-      "effect": ["finger strength", "endurance"]
+      "effect": ["finger strength", "endurance"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Aero 4's",
@@ -38,7 +46,9 @@
       "description": "Aerobic endurance is built over time with consistent pacing in this exercise.",
       "howTo": "Climb for 4 minutes at a low intensity without stopping. Rest for 4 minutes, then repeat. Focus on maintaining a steady pace to improve aerobic capacity.",
       "heroImage": "aero4",
-      "effect": ["endurance", "aerobic"]
+      "effect": ["endurance", "aerobic"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Latissimus Dorsi Stretch",
@@ -46,7 +56,9 @@
       "description": "A stretch focused on increasing flexibility and range of motion in the back.",
       "howTo": "Kneel on the floor and extend your arms forward, palms down. Slowly press your chest toward the ground, stretching the sides of your back. Hold for 30 seconds, then relax.",
       "heroImage": "latissimusDorsiStretch",
-      "effect": ["back", "stretch"]
+      "effect": ["back", "stretch"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Hip Flexor Stretch",
@@ -54,7 +66,9 @@
       "description": "Relieves tension in the hips and improves posture.",
       "howTo": "Step one leg forward into a lunge position, keeping your back leg straight. Push your hips forward to stretch the hip flexor of the back leg. Hold for 30 seconds on each side.",
       "heroImage": "hipFlexorStretch",
-      "effect": ["hip", "stretch"]
+      "effect": ["hip", "stretch"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Glute Stretch / Pigeon Pose",
@@ -62,7 +76,9 @@
       "description": "A deep stretch that targets the glutes, helping in mobility.",
       "howTo": "From a kneeling position, bring one leg forward with the knee bent and the other leg extended behind you. Lower your hips toward the floor to stretch the glute and hip muscles. Hold for 30 seconds.",
       "heroImage": "pidgeonStretch",
-      "effect": ["glute", "stretch"]
+      "effect": ["glute", "stretch"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Hamstring Stretch",
@@ -70,7 +86,9 @@
       "description": "An essential stretch for preventing injury in the legs.",
       "howTo": "Stand and bend forward at the waist, reaching toward your toes. Keep your legs straight but not locked. Hold for 30 seconds to stretch the hamstrings, then slowly return to standing.",
       "heroImage": "hamstringStretch",
-      "effect": ["hamstring", "stretch"]
+      "effect": ["hamstring", "stretch"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Run",
@@ -78,7 +96,9 @@
       "description": "Running builds both physical endurance and mental resilience.",
       "howTo": "Start with a warm-up walk or light jog. Increase speed gradually, maintaining a steady pace for the duration of the run. Cool down by walking or jogging at a slower pace.",
       "heroImage": "run",
-      "effect": ["endurance"]
+      "effect": ["endurance"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "MS RPE",
@@ -86,7 +106,9 @@
       "description": "A method for assessing workout intensity based on perceived exertion.",
       "howTo": "Perform an exercise while monitoring your level of exertion on a scale of 1-10, with 10 being the most intense. Adjust intensity according to the desired difficulty level.",
       "heroImage": "liftPinch",
-      "effect": ["finger strength"]
+      "effect": ["finger strength"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Strength Intervals / 5x3s",
@@ -94,7 +116,9 @@
       "description": "Strength is built with high-effort intervals and shorter rest periods.",
       "howTo": "Perform 5 sets of 3 intense climbing moves or hangs, with short rest periods in between. Focus on maximal effort during each set to build power and strength.",
       "heroImage": "strengthIntervals",
-      "effect": ["strength", "power"]
+      "effect": ["strength", "power"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Board climbing - Max efforts",
@@ -102,7 +126,9 @@
       "description": "Push yourself to the limit with maximum effort climbs on the board.",
       "howTo": "Climb on a training board using difficult holds or sequences. Perform short, intense sessions focused on maximal effort with longer rest periods to allow full recovery between attempts.",
       "heroImage": "boardClimbing",
-      "effect": ["strength", "power", "core"]
+      "effect": ["strength", "power", "core"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Boulder Pyramid",
@@ -110,7 +136,9 @@
       "description": "A structured climbing sequence that helps with strength and technique.",
       "howTo": "Climb increasingly difficult boulders in a pyramid sequence (e.g., easy, medium, hard, medium, easy). This method builds both strength and technique as you vary difficulty and intensity.",
       "heroImage": "boulderPyramid",
-      "effect": ["endurance", "power", "core"]
+      "effect": ["endurance", "power", "core"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "Plank",
@@ -118,7 +146,9 @@
       "description": "An exercise where you hold your body straight and parallel to the floor while resting on your toes and elbows.",
       "howTo": "From lying face down on a mat and place your elbows under your shoulders. Place your toes onto the mat and then push your forearms as you raise your body from the mat. Engage your abdominal muscles and try and form a straight line with your whole body. Keep your gaze down while taking steady, even breaths.",
       "heroImage": "plank",
-      "effect": ["core"]
+      "effect": ["core"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     },
     {
       "name": "ENOM",
@@ -126,7 +156,9 @@
       "description": "Compared to classic 4x4s, ENOMs (Every Minute On the Minute) may allow you to improve your anaerobic endurance for a longer sustained time.",
       "howTo": "Choose a moderate boulder and set a timer to 1 minute. Climb the boulder and rest for the remainder of the minute. At the start of the next minute, climb the boulder again. Do this for 4 to 10 minutes to complete a set and aim for 1-3 sets.",
       "heroImage": "enom",
-      "effect": ["anaerobic endurance", "strength endurance"]
+      "effect": ["anaerobic endurance", "strength endurance"],
+      "time": "45 min",
+      "effort": "8/10 RPE"
     }
   ]
 }

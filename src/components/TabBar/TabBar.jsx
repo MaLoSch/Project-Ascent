@@ -4,7 +4,8 @@ import TimerOutlinedIcon from '@mui/icons-material/TimerOutlined';
 import FaceOutlinedIcon from '@mui/icons-material/FaceOutlined';
 import './TabBar.scss'
 
-function TabBar(){
+function TabBar(props){
+    const { type } = props;
 
     const location = useLocation()
 
@@ -13,22 +14,49 @@ function TabBar(){
         //return location.pathname === path; // if location pathname is equal to path, return true. Otherwise return false
     }
 
-    return(
-        <>
+    function renderNav() {
+        return(
             <ul className='tab-bar'>
-                <li className={isActive('/exercises') ? 'active' : ''}>
-                    <FitnessCenterOutlinedIcon fontSize="12px"/>
-                    <Link to='/exercises'>Exercises</Link>
+                <li>
+                    <Link to='/exercises' className={isActive('/exercises') ? 'active' : ''}>
+                        <FitnessCenterOutlinedIcon className="tab-bar-icon" fontSize="12px"/>
+                        <p className="tab-bar-title">Exercises</p>
+                    </Link>
                 </li>
-                <li className={isActive('/timer') ? 'active' : ''}>
-                    <TimerOutlinedIcon fontSize="12px"/>
-                    <Link to='/timer'>Timer</Link>
+                
+                <li>
+                    <Link to='/timer' className={isActive('/timer') ? 'active' : ''}>
+                        <TimerOutlinedIcon className="tab-bar-icon" fontSize="12px"/>
+                        <p className="tab-bar-title">Timer</p>
+                    </Link>
                 </li>
-                <li className={isActive('/profile') ? 'active' : ''}>
-                    <FaceOutlinedIcon fontSize="12px"/>
-                    <Link to='/profile'>Profile</Link>
+                
+                <li>
+                    <Link to='/profile' className={isActive('/profile') ? 'active' : ''}>
+                        <FaceOutlinedIcon className="tab-bar-icon" fontSize="12px"/>
+                        <p className="tab-bar-title">Profile</p>
+                    </Link>
                 </li>
             </ul>
+        )
+    }
+
+    function renderTimerLink() {
+        return(
+            <ul className='tab-bar'>
+                <li>
+                    <Link to='/timer'>
+                        <TimerOutlinedIcon className="tab-bar-icon" fontSize="12px"/>
+                        <p className='tab-bar-title'>Start exercise</p>
+                    </Link>
+                </li>
+            </ul>
+        )
+    }
+
+    return(
+        <>
+            {type === "nav" ? renderNav() : renderTimerLink()}
         </>
     )
 }

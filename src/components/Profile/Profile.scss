@@ -5,13 +5,8 @@
     align-items: center;
 }
 
-/* every item inside profile receives the following style */
-.profile *:not(:first-child) {
-    padding-top: 16px;
-}
-
 /* the profile picture */
-.profile .pic {
+.profile-pic {
     width: 128px;
     height: 128px;
     border-radius: 100%;

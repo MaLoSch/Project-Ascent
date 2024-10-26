@@ -40,10 +40,15 @@ function Layout(props) {
         return location.pathname === path;
     }
 
+    // function to determine what kind of nav should be displayed
+    const navStyle = () => {
+        return location.pathname.startsWith('/exercises/') ? 'timer' : 'nav';
+    }
+
     return(
         <>
             <header>
-                <Header />
+                <Header type={navStyle()}/>
                 {/* Conditional rendering of the Marquee as it should NOT be displayed on the home page ('/') */}
                 {displayMarquee('/') ? <></> : <Marquee>{getTitle()}</Marquee> }
             </header>
@@ -51,7 +56,7 @@ function Layout(props) {
                 { <Outlet /> }
             </main>
             <nav>
-                <TabBar />
+                <TabBar type={navStyle()} />
             </nav>
         </>
     )

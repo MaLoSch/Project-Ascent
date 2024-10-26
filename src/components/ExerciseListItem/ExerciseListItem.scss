@@ -10,20 +10,18 @@
     align-items: center;
     color: var(--grey-75);
     transition: all 0.25s ease-in-out;
-}
 
-.exerciseListItem:hover {
-    color: var(--grey-white);
-    padding-left: 8px;
-}
+    & .exerciseListTitle {
+        color: inherit;
+        line-height: 130%;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0 0 0 4px;
+        font-style: italic;
+    }
 
-.exerciseListItem > p {
-    line-height: 130%;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0 0 0 4px;
-}
-
-.exerciseListTitle {
-    font-style: italic;
+    &:hover {
+        color: var(--grey-white);
+        padding-left: 8px;
+    }
 }
