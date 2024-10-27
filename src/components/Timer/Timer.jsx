@@ -1,4 +1,7 @@
 import React, { useState, useEffect } from 'react';
+import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
+import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
+import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import './Timer.scss'
 
 const Timer = () => {
@@ -51,11 +54,21 @@ const Timer = () => {
         </div>
         <div className="timer-controls">
           {!isRunning ? (
-            <button onClick={handleStart}>{isStopped ? "Resume" : "Start"}</button>
+            <button onClick={handleStart}>
+              <PlayArrowOutlinedIcon fontSize='.75rem' />
+              {isStopped ? "Resume" : "Start"}
+            </button>
           ) : (
-            <button onClick={handleStop}>Stop</button>
+            <button onClick={handleStop}>
+              <PauseOutlinedIcon fontSize=".75rem" />
+              Pause
+            </button>
           )}
-          {isStopped ? <button onClick={handleReset}>Reset</button> : <></>}
+          {isStopped ? 
+          <button onClick={handleReset}>
+            <StopOutlinedIcon fontSize='.75rem' />
+            Reset
+          </button> : <></>}
         </div>
       </section>
     </>

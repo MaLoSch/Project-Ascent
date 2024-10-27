@@ -16,7 +16,7 @@ function Header({type = "nav"}) {
         if(type === "timer") {
             return(
                 <div className="back-button" onClick={() => {navigate(-1)}}>
-                    <span><ArrowBackOutlinedIcon fontSize='12px'/></span>
+                    <span><ArrowBackOutlinedIcon className="back-icon" fontSize='.75rem'/></span>
                     <span>Back</span>
                 </div>
             )

@@ -5,11 +5,12 @@ header, nav {
 }
 
 header {
+    z-index: 1;
     top: 0; // position at top 
 }
 
 main {
-    padding: 53px 0 54px;
+    padding: 53px 0 64px;
 
     &.extra-padding {
         padding-top: calc(60px + 32px);

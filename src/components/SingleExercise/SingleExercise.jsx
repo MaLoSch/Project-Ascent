@@ -22,7 +22,7 @@ function SingleExercise(props) {
         <div className='page-content'>
             
             <section>
-                <ClipImage imageName={exercise.heroImage} range="5" height="160px" className="animate"></ClipImage>
+                <ClipImage imageName={exercise.heroImage} range="5" height="33vh" className="animate"></ClipImage>
             </section>
 
             <section className='side-padding'>

@@ -7,12 +7,14 @@ ul.tab-bar {
         flex: 0 1 100%;
 
         & a {
-            padding: 16px 0;
+            padding: 24px 0;
             display: flex;
             align-items: center;
             justify-content: center;
             color: var(--grey-75);
-            border-bottom: 1px solid var(--grey-black);
+            -webkit-box-shadow: inset 0px -1px 0px 0px var(--grey-black);
+            -moz-box-shadow: inset 0px -1px 0px 0px var(--grey-black);
+            box-shadow: inset 0px -1px 0px 0px var(--grey-black);
             transition: all 0.25s ease-in-out;
             position: relative;
 
@@ -22,27 +24,32 @@ ul.tab-bar {
 
             &.active {
                 color: var(--orange-55);
-                border-bottom: 1px solid var(--orange-55);
+                -webkit-box-shadow: inset 0px -4px 0px -3px var(--orange-55);
+                -moz-box-shadow: inset 0px -4px 0px -3px var(--orange-55);
+                box-shadow: inset 0px -4px 0px -3px var(--orange-55);
                 
                 & .tab-bar-icon {
-                    transform: translateX(-4px);
+                    transform: translateY(-10px);
                 }
 
                 & .tab-bar-title {
                     opacity: 1;
-                    transform: translateX(4px);
+                    transform: translateY(10px);
                 }
             }
 
             & .tab-bar-icon {
+                font-size: 1rem;
+                position: absolute;
                 transition: inherit;
-                transform: translateX(175%);
+                transform: translateY(0);
             }
 
             & .tab-bar-title {
+                font-size: .75rem;
                 transition: inherit;
                 opacity: 0;
-                transform: translateX(-100%);
+                transform: translateY(0);
                 color: inherit;
             }
         }

@@ -9,14 +9,17 @@
         display: flex;
         width: 100%;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: center;
 
         & button {
             padding: 16px;
-            flex: 0 1 100%;
+            flex: 0 1 25%;
             background-color: var(--grey-black);
             border: none;
             font-style: italic;
+            font-size: 1rem;
+            display: flex;
+            align-items: normal;
 
             &:not(:first-child) {
                 margin: 0 0 0 16px;
