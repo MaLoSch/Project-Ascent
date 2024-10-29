@@ -6,8 +6,6 @@ function Meta(props) {
 
     const { time, effort } = props
 
-    console.log(props)
-
     return(
         <>
         <section className="meta-info side-padding">

@@ -38,7 +38,7 @@ function SingleExercise(props) {
             </section>
 
             <section className='side-padding'>
-                <AccordionItem title="Description">
+                <AccordionItem title="Description" open={true}>
                     <p>{exercise.description}</p>
                 </AccordionItem>
             </section>

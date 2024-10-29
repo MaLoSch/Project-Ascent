@@ -1,13 +1,22 @@
-import {useRef, useState} from 'react' // import required react properties
+import {useRef, useState, useEffect} from 'react' // import required react properties
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 import "./AccordionItem.scss"; // import accordion stylesheet
 
 // main accordion function with children prop and title prop (using a default value)
-function AccordionItem({children, title="Some other title"}) {
+function AccordionItem({children, title="Some other title", open=false}) {
 
     const [isOpen, setIsOpen] = useState(false); // keeping track of isOpen state
     const [height, setHeight] = useState(0); // Initially height is 0 (collapsed)
     const contentRef = useRef(null); // Reference to the content element
+
+    // function is triggered when component is mounted
+    useEffect(() => {
+        // check if the open prop is true
+        if (open) {
+            // toggle the accordion
+            toggleAccordion();
+        }
+      }, [open]);
 
     // function when accordion is toggled open / closed
     function toggleAccordion() {
