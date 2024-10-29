@@ -19,6 +19,9 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
     - Basic profile information
 
 ### To-Do for current MVP
+- [ ] Accordion component
+    - [ ] Description accordion should be open by default
+    - [ ] Add state to accordion component to control open/closed state
 - [ ] Organize tasks by priority
 - [ ] Home page
     - [x] Image to stretch over the available space
