@@ -159,6 +159,26 @@
       "effect": ["anaerobic endurance", "strength endurance"],
       "time": "45 min",
       "effort": "8/10 RPE"
+    },
+    {
+      "name": "Boulder Mileage",
+      "id": 16,
+      "description": "A high volume bouldering session that should be performed on a boulder wall or steep board.",
+      "howTo": "Aim to complete 20 boulders that will achieve the correct stimulus. You have an hour to attempt and complete all 20 boulder. That means you have roughly 3 minutes for each boulder. Attempt to flash every problem but you can have a second attempt, if you fail. Once the boulder has been completed or you failed a on your second attempt, you can rest for the remainder of the three minutes. You get the most out of this exercise if you are prepared to push yourself consistently.",
+      "heroImage": "none",
+      "effect": ["strength endurance"],
+      "time": "60 minutes",
+      "effort": "8/10 RPE"
+    },
+    {
+      "name": "Shoulder Rotations",
+      "id": 17,
+      "description": "Exercise to strengthen your shoulder.",
+      "howTo": "Prone on a bench, engage your scapula and hold the dumbbell with your hand with your elbow out at 90 degrees from your body and with a 90 degree bend at the elbow. Lower the weight down to the floor and then bring the weight back up to the starting position. This is one rep. Focus on rotating from your shoulder rather than your elbow and maintain the 90 bend at the elbow throughout the whole movement. Every repetition should be performed  with good form, in full range of motion and in a controlled way. Keep your scapula enfafed and don't allow winging in order to get a greater range of movement. Your range of movement may differ from the one in the images.",
+      "heroImage": "none",
+      "effect": ["conditioning"],
+      "time": "5 minutes",
+      "effort": "12 RM"
     }
   ]
 }
