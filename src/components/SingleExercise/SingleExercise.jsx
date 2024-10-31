@@ -3,6 +3,7 @@ import AccordionItem from '../../components/AccordionItem/AccordionItem'
 import ClipImage from '../../components/ClipImage/ClipImage'
 import Pill from '../../components/Pill/Pill'
 import Meta from '../../components/Meta/Meta'
+import './SingleExercise.scss'
 
 function SingleExercise(props) {
 
@@ -45,7 +46,11 @@ function SingleExercise(props) {
 
             <section className='side-padding'>
                 <AccordionItem title="How to">
-                    <p>{exercise.howTo}</p>
+                    <ul className="how-to">
+                        {exercise.howTo.map((step, id) => (
+                            <li key={id}>{step}</li>
+                        ))}
+                    </ul>
                 </AccordionItem>
             </section>
         </div>

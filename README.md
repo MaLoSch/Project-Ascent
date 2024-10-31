@@ -25,6 +25,7 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
     - [X] Description accordion should be open by default
     - [X] Add state to accordion component to control open/closed state
 - [ ] Organize tasks by priority
+- [ ] How to accordion should have description in steps
 - [ ] Home page
     - [x] Image to stretch over the available space
     - [ ] Image to change (random or after a certain time)
@@ -58,6 +59,7 @@ Main task will be the deployment on a server and establish a back end with Mongo
 
 ## MVP 4
 - Ability to login and ability to change account information
+- Glossary
 
 ## MVP 5
 - Logbook for each account and ability to comment on exercises

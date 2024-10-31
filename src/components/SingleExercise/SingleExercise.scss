@@ -1,0 +1,11 @@
+ul {
+    &.how-to {
+        list-style-type: decimal;
+        list-style-position: inside;
+        & li {
+            &:not(:first-child) {
+                padding: 8px 0 0 0;
+            }
+        }
+    }
+}
