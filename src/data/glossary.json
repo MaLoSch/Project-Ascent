@@ -1,0 +1,19 @@
+{
+    "glossary": [
+        {
+            "name": "Progressive Overload",
+            "description": "Progressive overload is the process of incrementally incrasing the difficulty of training to continuously challenge the body. This ensures an adequate stimulus for adaptation is provided, allowing us to make consistent progress over time. Without progressive overload, the body would adapt to the initial challenge, but we would not progress past this. We must make sure we don't make our training too challenging before our body is ready. Equally, we don't want our training to remain too easy so that it doesn't promote optimal adaption. It's important to understand that progressive overload is a principle, not a rule. Our bodies do not always follow set plans exactly. Progressive overload is not a linear process. Expecting to consistently increase the training load at a constant rate over time is unrealistic. Flexibility in adjusting the rate of progressing according to the body's feedback can lead to more sustainable and consistent improvement. Adapting the training plan based on how your body responds can be more effective than strictly adhering to a predefined plan.",
+            "image": "some image"            
+        },
+        {
+            "name": "ROF - Rate of Fatigue",
+            "description": "description goes here",
+            "image": "some image"
+        },
+        {
+            "name": "RPE - Rate of Perceived Effort",
+            "description": "description goes here",
+            "image": "some image"
+        }
+    ]
+}
