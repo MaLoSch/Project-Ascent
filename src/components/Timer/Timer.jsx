@@ -5,25 +5,41 @@ import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import './Timer.scss'
 
 const Timer = () => {
-  const [time, setTime] = useState(0);  // Time in seconds
+  const [time, setTime] = useState(0);  // Time in milliseconds
   const [isRunning, setIsRunning] = useState(false);  // Track if the timer is running
   const [isStopped, setIsStopped] = useState(false); // Track if the timer is stopped
+  const [isCountdown, setIsCountdown] = useState(false); // track if timer is in countdown mode or stopwatch mode
+
+  const fixedCountdownTime = 60000; // 1 minute in milliseconds
 
   useEffect(() => {
-    let intervalId;
+    let intervalId; // variable to store setInterval function. This is used to cleanup the interval when the component is dismounted
 
     if (isRunning) {
       // Update time every second when the timer is running
       intervalId = setInterval(() => {
-        setTime(prevTime => prevTime + 10);
-      }, 10);
+        setTime(prevTime => {
+          if(isCountdown) {
+            // countdown mode -> decrement time
+            // is this still executed when the timer reaches zero?
+            console.log(prevTime);
+            return prevTime > 0 ? prevTime - 10 : 0;
+          } else {
+            // stopwatch mode -> increment time
+            return prevTime + 10;
+          }
+        });
+      }, 10); // interval time should be a variable
     }
 
     // Cleanup interval on component unmount or when timer stops
     return () => clearInterval(intervalId);
-  }, [isRunning]);
+  }, [isRunning, isCountdown]);
 
   const handleStart = () => {
+    if(isCountdown && time === 0) {
+      setTime(fixedCountdownTime);
+    }
     setIsRunning(true);
     setIsStopped(false);
   };
@@ -34,8 +50,13 @@ const Timer = () => {
   const handleReset = () => {
     setIsRunning(false);
     setIsStopped(false);
-    setTime(0);
+    setTime(isCountdown ? fixedCountdownTime : 0); // rest to countdown or stopwatch mode
   };
+
+  const toggleMode = () => {
+    setIsCountdown(!isCountdown);
+    setTime(!isCountdown ? fixedCountdownTime : 0); // set intial time based on mode
+  }
 
   // Helper function to format time
   const formatTime = (time) => {
@@ -53,6 +74,11 @@ const Timer = () => {
           <h1>{formatTime(time)}</h1>
         </div>
         <div className="timer-controls">
+          
+          <button onClick={toggleMode}>
+            {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"}
+          </button>
+
           {!isRunning ? (
             <button onClick={handleStart}>
               <PlayArrowOutlinedIcon fontSize='.75rem' />

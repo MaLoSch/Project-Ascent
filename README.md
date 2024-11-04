@@ -3,6 +3,14 @@ The Project Ascent (PA) App is a digital tool for climbing training. It allows y
 
 (More info comging soon...)
 
+## Curent Version
+0.7.1
+
+X.Y.Z
+x > Major update
+y > Minor update
+z > Patches for bug fixes
+
 # Roadmap
 ## MVP 1
 For MVP 1 the following functionality should be available. Estimated timeframe is end of October 2024.
@@ -21,6 +29,8 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
 ### To-Do for current MVP
 - [ ] Bugs
     - [ ] Timer controls don't seem to be centered
+    - [ ] Timer toggle needs to be styled
+    - [ ] Timer should pause countdown when reaching 0
 - [X] Accordion component
     - [X] Description accordion should be open by default
     - [X] Add state to accordion component to control open/closed state
