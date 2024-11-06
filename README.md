@@ -4,7 +4,7 @@ The Project Ascent (PA) App is a digital tool for climbing training. It allows y
 (More info comging soon...)
 
 ## Curent Version
-0.7.1
+0.7.2
 
 X.Y.Z
 x > Major update

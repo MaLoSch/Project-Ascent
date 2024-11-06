@@ -47,6 +47,7 @@ const Timer = () => {
     setIsRunning(false);
     setIsStopped(true);
   };
+
   const handleReset = () => {
     setIsRunning(false);
     setIsStopped(false);
@@ -54,6 +55,8 @@ const Timer = () => {
   };
 
   const toggleMode = () => {
+    setIsRunning(false);
+    setIsStopped(false);
     setIsCountdown(!isCountdown);
     setTime(!isCountdown ? fixedCountdownTime : 0); // set intial time based on mode
   }
@@ -70,14 +73,20 @@ const Timer = () => {
   return (
     <>
       <section className="timer-container full-height side-padding">
+        
+        <div className="timer-mode">
+          <label className="switch">
+            <input type="checkbox" onClick={toggleMode} />
+            <span className="slider round" />
+          </label>
+              {/* {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"} */ }
+        </div>
+        
         <div className="timer-counter">
           <h1>{formatTime(time)}</h1>
         </div>
+
         <div className="timer-controls">
-          
-          <button onClick={toggleMode}>
-            {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"}
-          </button>
 
           {!isRunning ? (
             <button onClick={handleStart}>
