@@ -75,10 +75,12 @@ const Timer = () => {
       <section className="timer-container full-height side-padding">
         
         <div className="timer-mode">
+          <p className="timer-label">Stopwatch</p>
           <label className="switch">
             <input type="checkbox" onClick={toggleMode} />
             <span className="slider round" />
           </label>
+          <p className="timer-label">Countdown</p>
               {/* {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"} */ }
         </div>
         

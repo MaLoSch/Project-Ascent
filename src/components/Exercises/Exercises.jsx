@@ -29,7 +29,7 @@ function Exercises(props) {
             
             <section className='side-padding'>
                 {filteredExercises.length === 0
-                    ? <p>No exercises found</p>
+                    ? <p className="no-results">No exercises found</p>
                     : <>
                         {filteredExercises.map((item) => (
                             <ExerciseListItem
