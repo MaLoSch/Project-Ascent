@@ -10,7 +10,14 @@ function ClipImage({ imageName = "default", range = 8, height="auto", className=
 
     // function to retrieve a random position for each corner of the polygon mask
     function randomPos() {
-        return(Math.floor(Math.random()*range))
+        let randomPos;
+        let chance = Math.random();
+        if(chance > .5) {
+            randomPos = 0;
+        } else {
+            randomPos = Math.floor(Math.random()*range)
+        }
+        return randomPos;
     }
     
     // function when the image is clicked

@@ -1,5 +1,6 @@
 import "./Search.scss"
 import { useState } from "react"
+import SearchIcon from '@mui/icons-material/Search';
 
 function Search(props)  {
 
@@ -17,7 +18,7 @@ function Search(props)  {
 
     return(
         <>
-            <input 
+            <input
                 type="text"
                 placeholder="Search"
                 value={search} // the value of the input field is determined by the state

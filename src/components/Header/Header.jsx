@@ -12,18 +12,18 @@ function Header({type = "nav"}) {
 
     const navigate = useNavigate();
     
-    const showBackButton = () => {
+    const showLeftToolbar = () => {
         if(type === "timer") {
             return(
                 <div className="back-button" onClick={() => {navigate(-1)}}>
-                    <span><ArrowBackOutlinedIcon className="back-icon" fontSize='.75rem'/></span>
+                    <ArrowBackOutlinedIcon className="back-icon" fontSize='1rem'/>
                     <span>Back</span>
                 </div>
             )
         } else {
             return(
                 <div className="menu-button">
-                    <MenuOutlinedIcon /> {/* Hiding menu for now as it is not required at the moment */ }
+                   {/* <MenuOutlinedIcon /> {/* Hiding menu for now as it is not required at the moment */ }
                 </div>
             )
         }
@@ -34,15 +34,13 @@ function Header({type = "nav"}) {
             <div id="header">
                 {/** onClick nafigate(-1) is the back button functionality provided by react-router-dom */}
                 <div className="left-header">
-                    { showBackButton() }
+                    { showLeftToolbar() }
                 </div>
                 
                 <div className="middle-header">
                     <Link to='/'>
                         <span>Project</span>
-                        <span>
                             <img className="app-logo" src={pa} />
-                        </span>
                         <span>Ascent</span>
                     </Link>
                 </div>

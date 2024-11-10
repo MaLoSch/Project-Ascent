@@ -1,16 +1,18 @@
 #header {
     position: fixed;
     top: 0px;
-    padding: 16px 12px;
+    padding: 16px;
     display: flex;
     width: 100%;
     background-color: var(--grey-black);
     justify-content: space-between;
+    line-height: 12px;
+    font-size: .75rem;
 
     & .left-header {
         flex: 0 1 25%;
         display: flex;
-        font-size: .75rem;
+        font-size: .5rem;
         cursor: pointer;
 
         & .back-button {
@@ -27,6 +29,11 @@
         flex: 0 1 50%;
         display: flex;
         justify-content: center;
+
+        & a {
+            display: flex;
+            align-items: center;
+        }
     }
 
     & .right-header {

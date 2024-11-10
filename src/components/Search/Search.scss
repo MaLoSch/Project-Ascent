@@ -1,8 +1,22 @@
 input[type=text] {
-    width: 100%; // take up the whole width of the screen
-    padding: 8px; // sir paddington
-    border: none;
-    border-bottom: 1px solid var(--grey-15);
-    font-size: 1rem;
-    background-color: var(--grey-black);
+  width: 100%; // take up the whole width of the screen
+  padding: 8px 8px 8px 32px; // sir paddington
+  border: none;
+  border-bottom: 1px solid var(--grey-15);
+  font-size: 1rem;
+  color: var(--grey-75);
+  background-color: var(--grey-black);
+  background-image: url('search.svg');
+  background-position: 6px 6px;
+  background-repeat: no-repeat;
+
+  &::placeholder { // specific styling for the placeholder text
+    color: var(--grey-75); // use 
   }
+
+  &:focus-visible { // styling the boundary when the search field is focused
+    outline: none; // no outline
+    border-bottom-color: var(--orange-55); // change color of the bottom border
+    color: var(--orange-55); // change color of the text
+  }
+}

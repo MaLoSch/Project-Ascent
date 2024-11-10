@@ -8,7 +8,8 @@
       "heroImage": "arc10",
       "effect": ["endurance"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
       "name": "1 on 1 off active",
@@ -18,7 +19,8 @@
       "heroImage": "1on1off",
       "effect": ["endurance"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
       "name": "50:50",
@@ -28,7 +30,8 @@
       "heroImage": "50-50",
       "effect": ["unknown"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
       "name": "7:3s",
@@ -38,7 +41,8 @@
       "heroImage": "73s",
       "effect": ["finger strength", "endurance"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Hangboard", "Lifting Edge"]
     },
     {
       "name": "Aero 4's",
@@ -48,7 +52,8 @@
       "heroImage": "aero4",
       "effect": ["endurance", "aerobic"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
       "name": "Latissimus Dorsi Stretch",
@@ -58,7 +63,8 @@
       "heroImage": "latissimusDorsiStretch",
       "effect": ["back", "stretch"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Floor"]
     },
     {
       "name": "Hip Flexor Stretch",
@@ -68,7 +74,8 @@
       "heroImage": "hipFlexorStretch",
       "effect": ["hip", "stretch"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Floor"]
     },
     {
       "name": "Glute Stretch / Pigeon Pose",
@@ -78,7 +85,8 @@
       "heroImage": "pidgeonStretch",
       "effect": ["glute", "stretch"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Floor"]
     },
     {
       "name": "Hamstring Stretch",
@@ -88,7 +96,8 @@
       "heroImage": "hamstringStretch",
       "effect": ["hamstring", "stretch"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Floor"]
     },
     {
       "name": "Run",
@@ -98,7 +107,8 @@
       "heroImage": "run",
       "effect": ["endurance"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Treadmill", "Road", "Trail"]
     },
     {
       "name": "MS RPE",
@@ -108,7 +118,8 @@
       "heroImage": "liftPinch",
       "effect": ["finger strength"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Pinch block"]
     },
     {
       "name": "Strength Intervals / 5x3s",
@@ -118,7 +129,8 @@
       "heroImage": "strengthIntervals",
       "effect": ["strength", "power"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
       "name": "Board climbing - Max efforts",
@@ -128,7 +140,8 @@
       "heroImage": "boardClimbing",
       "effect": ["strength", "power", "core"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Climbing board", "System wall", "Spray wall"]
     },
     {
       "name": "Boulder Pyramid",
@@ -138,7 +151,8 @@
       "heroImage": "boulderPyramid",
       "effect": ["endurance", "power", "core"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
       "name": "Plank",
@@ -148,7 +162,8 @@
       "heroImage": "plank",
       "effect": ["core"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Floor"]
     },
     {
       "name": "ENOM",
@@ -158,7 +173,8 @@
       "heroImage": "enom",
       "effect": ["anaerobic endurance", "strength endurance"],
       "time": "45 min",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
       "name": "Boulder Mileage",
@@ -168,7 +184,8 @@
       "heroImage": "none",
       "effect": ["strength endurance"],
       "time": "60 minutes",
-      "effort": "8/10 RPE"
+      "effort": "8/10 RPE",
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
       "name": "Shoulder Rotations",
@@ -184,7 +201,8 @@
       "heroImage": "none",
       "effect": ["conditioning"],
       "time": "5 minutes",
-      "effort": "12 RM"
+      "effort": "12 RM",
+      "equipment": ["Dumbbell", "Bench"]
     }
   ]
 }

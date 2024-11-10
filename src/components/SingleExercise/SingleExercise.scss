@@ -3,6 +3,7 @@ ul {
         list-style-type: decimal;
         list-style-position: inside;
         & li {
+            color: var(--grey-55);
             &:not(:first-child) {
                 padding: 8px 0 0 0;
             }

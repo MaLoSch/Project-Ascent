@@ -72,10 +72,9 @@ const Timer = () => {
 
   return (
     <>
-      <section className="timer-container full-height side-padding">
-        
+      <section className="side-padding">
         <div className="timer-mode">
-          <p className="timer-label">Stopwatch</p>
+          <p className="timer-label left">Stopwatch</p>
           <label className="switch">
             <input type="checkbox" onClick={toggleMode} />
             <span className="slider round" />
@@ -83,6 +82,9 @@ const Timer = () => {
           <p className="timer-label">Countdown</p>
               {/* {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"} */ }
         </div>
+      </section>
+
+      <section className="timer-container full-height side-padding">
         
         <div className="timer-counter">
           <h1>{formatTime(time)}</h1>
@@ -93,18 +95,18 @@ const Timer = () => {
           {!isRunning ? (
             <button onClick={handleStart}>
               <PlayArrowOutlinedIcon fontSize='.75rem' />
-              {isStopped ? "Resume" : "Start"}
+              <span className="button-label">{isStopped ? "Resume" : "Start"}</span>
             </button>
           ) : (
             <button onClick={handleStop}>
               <PauseOutlinedIcon fontSize=".75rem" />
-              Pause
+              <span className="button-label">Pause</span>
             </button>
           )}
           {isStopped ? 
           <button onClick={handleReset}>
             <StopOutlinedIcon fontSize='.75rem' />
-            Reset
+            <span className="button-label">Reset</span>
           </button> : <></>}
         </div>
       </section>

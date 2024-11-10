@@ -5,20 +5,22 @@
     flex-direction: row; // items next to each other
     align-items: center; // center items vertically
     position: fixed;
-    top: 53px;
+    top: 44px;
     padding: 0 0 16px 0;
 }
 
 .marquee-container p {
-    animation: marquee infinite 21s linear;
-    color: var(--grey-25);
-    font-size: 0.75rem;
-    flex-shrink: 0;
-    flex-grow: 0;
-    flex-basis: auto;
+    animation: marquee infinite 21s linear; // animation settings
+    color: var(--grey-35); // secondary type color
+    font-size: 0.75rem; // 75% of base font size
+    letter-spacing: .25px; // letter spacing for the marquee paragraphs
+    // the following puts the marquee elements in a row
+    flex-shrink: 0; // elements are not allowed to shrink
+    flex-grow: 0; // elements are not allowed to grow
+    flex-basis: auto; // base size is determiend automatically
 }
 
 @keyframes marquee {
-    from {transform: translateX(0%);}
-    to {transform: translateX(-100%);}
+    from {transform: translateX(0%);} // set starting transform point
+    to {transform: translateX(-100%);} // set ending transdorm point
 }

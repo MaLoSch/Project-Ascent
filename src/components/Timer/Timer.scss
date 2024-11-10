@@ -1,69 +1,76 @@
+.timer-mode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    & .timer-label {
+        font-size: .75rem;
+        flex: 0 1 100%;
+        color: var(--grey-25);
+
+        &.left {
+            text-align: right;
+        }
+    }
+
+    & .switch {
+        /* The switch - the box around the slider */
+        position: relative;
+        display: inline-block;
+        flex: 0 0 28px;
+        //width: 60px;
+        height: 16px;
+        margin: 0 12px;
+
+        & input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked {
+                & + .slider { // + is the sibling selector which is required because input and .slider are sibling and not nested
+                    &::before {
+                        transform: translateX(12px);
+                    }
+                }
+            }
+        }
+
+        & .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: var(--grey-15);
+            -webkit-transition: .25s;
+            transition: .25s;
+            border-radius: 34px;
+
+            &:before {
+                position: absolute;
+                content: "";
+                height: 12px;
+                width: 12px;
+                left: 2px;
+                bottom: 2px;
+                background-color: var(--grey-75);
+                -webkit-transition: .25s;
+                transition: .25s;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+
 .timer-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 16px;
-
-    & .timer-mode {
-        display: flex;
-        justify-content: center;
-
-        & .timer-label {
-            font-size: .75rem;
-            flex: 0 1 100%;
-        }
-
-        & .switch {
-            /* The switch - the box around the slider */
-            position: relative;
-            display: inline-block;
-            flex: 0 0 60px;
-            //width: 60px;
-            height: 34px;
-            margin: 0 12px;
-
-            & input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-
-                &:checked {
-                    & + .slider { // + is the sibling selector which is required because input and .slider are sibling and not nested
-                        &::before {
-                            transform: translateX(26px);
-                        }
-                    }
-                }
-            }
-
-            & .slider {
-                position: absolute;
-                cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: var(--grey-25);
-                -webkit-transition: .25s;
-                transition: .25s;
-                border-radius: 34px;
-
-                &:before {
-                    position: absolute;
-                    content: "";
-                    height: 26px;
-                    width: 26px;
-                    left: 4px;
-                    bottom: 4px;
-                    background-color: white;
-                    -webkit-transition: .25s;
-                    transition: .25s;
-                    border-radius: 50%;
-                }
-            }
-        }
-    }
 
     & .timer-controls {
         display: flex;
@@ -80,10 +87,19 @@
             font-size: 1rem;
             display: flex;
             align-items: normal;
+            color: var(--grey-75);
 
             &:not(:first-child) {
                 margin: 0 0 0 16px;
             }
+
+            & .button-label {
+                margin: 0 0 0 4px;
+              }
         }
+    }
+
+    & .timer-counter {
+        color: var(--grey-55);
     }
 }
