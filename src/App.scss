@@ -20,6 +20,12 @@ section {
   &:not(:first-child) {
     padding-top: 16px;
   }
+  &.center {
+    // used to center specific sections
+    display: flex; // use flexbox to align items
+    flex-direction: column; // align items vertically
+    align-items: center; // positin items in the middle
+  }
 }
 
 p {

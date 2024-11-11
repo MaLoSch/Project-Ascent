@@ -7,11 +7,19 @@
 
 /* the profile picture */
 .profile-pic {
-    width: 128px;
-    height: 128px;
-    border-radius: 100%;
+    width: 128px; // set width of image
+    height: 128px; // set height of image
+    border-radius: 100%; // make the image round
+    object-fit: cover; // prevent object from being squished
+    object-position: top; // see upper part of the image
 }
 
-.profile .given-name {
+.given-name {
     font-weight: bold;
+}
+
+.location {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }

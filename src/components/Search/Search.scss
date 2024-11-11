@@ -9,6 +9,7 @@ input[type=text] {
   background-image: url('search.svg');
   background-position: 6px 6px;
   background-repeat: no-repeat;
+  transition: all .25s ease-in-out;
 
   &::placeholder { // specific styling for the placeholder text
     color: var(--grey-75); // use 
