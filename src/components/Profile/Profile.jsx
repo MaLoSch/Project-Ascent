@@ -21,7 +21,7 @@ function Profile() {
         <section className="side-padding center">
             <p className="location">
             <LocationOnOutlinedIcon fontSize="12px" />
-            <span className="city">City</span>, <span className="country">Country</span>
+            <span className="city">City,&nbsp;</span><span className="country">Country</span>
             </p>
         </section>
         </>
