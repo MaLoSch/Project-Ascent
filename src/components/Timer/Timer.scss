@@ -88,6 +88,9 @@
             display: flex;
             align-items: normal;
             color: var(--grey-75);
+            display: flex; // use flexbox
+            flex-direction: row; // position items horizontally
+            justify-content: center; // center items
 
             &:not(:first-child) {
                 margin: 0 0 0 16px;
