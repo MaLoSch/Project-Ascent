@@ -1,15 +1,18 @@
 input[type=text] {
   width: 100%; // take up the whole width of the screen
-  padding: 8px 8px 8px 32px; // sir paddington
+  padding: 8px 8px 8px 20px; // more padding on the left to make space for the search icon
   border: none;
   border-bottom: 1px solid var(--grey-15);
-  font-size: 1rem;
+  font-size: .75rem;
+  line-height: 1rem;
   color: var(--grey-75);
   background-color: var(--grey-black);
   background-image: url('search.svg');
-  background-position: 6px 6px;
+  background-size: 12px;
+  background-position: 4px 10px;
   background-repeat: no-repeat;
   transition: all .25s ease-in-out;
+  letter-spacing: 0.5px;
 
   &::placeholder { // specific styling for the placeholder text
     color: var(--grey-75); // use 
