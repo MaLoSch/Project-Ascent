@@ -32,12 +32,18 @@
         & .accordion-icon {
             transition: transform 0.25s ease-in-out;
             transform: rotate(0);
+            display: flex;
         }
     }
 
     & .accordion-content {
         height: 0;
         overflow: hidden;
-        transition: height 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+        margin-top: 0px;
+
+        &.active {
+            margin-top: 8px;
+        }
     }
 }

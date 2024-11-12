@@ -1,7 +1,14 @@
 .meta-info {
-    color: var(--grey-55);
-    font-size: .75rem;
+    color: var(--grey-35);
+    font-size: .75rem; // 12px
     display: flex;
+
+    & .time,
+    & .effort {
+        display: flex; // use CSS flexbox
+        flex-direction: row; // align items in a row
+        align-items: center; // make sure icon and text are aligned vertically
+    }
 }
 
 .meta-icon {

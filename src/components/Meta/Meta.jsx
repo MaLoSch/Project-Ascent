@@ -9,12 +9,12 @@ function Meta(props) {
     return(
         <>
         <section className="meta-info side-padding">
-            <span>
+            <span className="time">
                 <AccessTimeOutlinedIcon className="meta-icon" fontSize='.75rem' />
                 {time}
             </span>
             <span>&nbsp;|&nbsp;</span>
-            <span>
+            <span className="effort">
                 <SpeedOutlinedIcon className="meta-icon" fontSize='.75rem' />
                 {effort}
             </span>
