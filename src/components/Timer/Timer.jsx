@@ -10,7 +10,9 @@ const Timer = () => {
   const [isStopped, setIsStopped] = useState(false); // Track if the timer is stopped
   const [isCountdown, setIsCountdown] = useState(false); // track if timer is in countdown mode or stopwatch mode
 
-  const fixedCountdownTime = 60000; // 1 minute in milliseconds
+  const intervalTime = 500; // interval time used to increment / decrement time -> 500ms is half a second
+
+  const fixedCountdownTime = 3000; // 1 minute in milliseconds
 
   useEffect(() => {
     let intervalId; // variable to store setInterval function. This is used to cleanup the interval when the component is dismounted
@@ -19,17 +21,24 @@ const Timer = () => {
       // Update time every second when the timer is running
       intervalId = setInterval(() => {
         setTime(prevTime => {
+          // countdown mode -> decrement timer
           if(isCountdown) {
-            // countdown mode -> decrement time
-            // is this still executed when the timer reaches zero?
-            console.log(prevTime);
-            return prevTime > 0 ? prevTime - 10 : 0;
-          } else {
+            console.log(prevTime)
+            if(prevTime > 0) {
+              return prevTime - intervalTime;
+            } else {
+              // countdown hits 0
+              handleStop(); // reset the timer !!!!! this should be handled differently
+              return 0; // set clock to 0
+            }
+            //return prevTime > 0 ? prevTime - intervalTime : 0;
+          
             // stopwatch mode -> increment time
-            return prevTime + 10;
+          } else {
+            return prevTime + intervalTime;
           }
         });
-      }, 10); // interval time should be a variable
+      }, intervalTime); // interval time should be a variable
     }
 
     // Cleanup interval on component unmount or when timer stops
@@ -63,11 +72,15 @@ const Timer = () => {
 
   // Helper function to format time
   const formatTime = (time) => {
-    const milliseconds = time % 1000;
     const seconds = Math.floor(time / 1000) % 60;
     const minutes = Math.floor(time / 60000);
+    const hours = Math.floor(time / 3600000);
     
-    return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(Math.floor(milliseconds / 10)).padStart(2, '0')}`;
+    return <>
+      <span className="hours">{String(hours).padStart(2, '0')}</span>:
+      <span className="minutes">{String(minutes).padStart(2, '0')}</span>:
+      <span className="seconds">{String(seconds).padStart(2, '0')}</span>
+    </>;
   };
 
   return (
@@ -87,7 +100,7 @@ const Timer = () => {
       <section className="timer-container full-height side-padding">
         
         <div className="timer-counter">
-          <h1>{formatTime(time)}</h1>
+          <h1 className="time">{formatTime(time)}</h1>
         </div>
 
         <div className="timer-controls">
