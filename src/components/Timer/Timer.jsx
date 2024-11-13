@@ -70,6 +70,18 @@ const Timer = () => {
     setTime(!isCountdown ? fixedCountdownTime : 0); // set intial time based on mode
   }
 
+  const changeHours = () => {
+    console.log("change hours");
+  }
+
+  const changeMinutes = () => {
+    console.log("change minutes");
+  }
+
+  const changeSeconds = () => {
+    console.log("change seconds");
+  }
+
   // Helper function to format time
   const formatTime = (time) => {
     const seconds = Math.floor(time / 1000) % 60;
@@ -77,9 +89,9 @@ const Timer = () => {
     const hours = Math.floor(time / 3600000);
     
     return <>
-      <span className="hours">{String(hours).padStart(2, '0')}</span>:
-      <span className="minutes">{String(minutes).padStart(2, '0')}</span>:
-      <span className="seconds">{String(seconds).padStart(2, '0')}</span>
+      <span onClick={changeHours} className="hours">{String(hours).padStart(2, '0')}</span>:
+      <span onClick={changeMinutes} className="minutes">{String(minutes).padStart(2, '0')}</span>:
+      <span onClick={changeSeconds} className="seconds">{String(seconds).padStart(2, '0')}</span>
     </>;
   };
 
