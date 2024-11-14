@@ -4,11 +4,12 @@ import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
 import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import './Timer.scss'
 
-const Timer = () => {
+function Timer() {
   const [time, setTime] = useState(0);  // Time in milliseconds
   const [isRunning, setIsRunning] = useState(false);  // Track if the timer is running
   const [isStopped, setIsStopped] = useState(false); // Track if the timer is stopped
   const [isCountdown, setIsCountdown] = useState(false); // track if timer is in countdown mode or stopwatch mode
+  const [isFinished, setIsFinished] = useState(false); // track if timer is finished (only applicable in countdown mode)
 
   const intervalTime = 500; // interval time used to increment / decrement time -> 500ms is half a second
 
@@ -28,7 +29,7 @@ const Timer = () => {
               return prevTime - intervalTime;
             } else {
               // countdown hits 0
-              handleStop(); // reset the timer !!!!! this should be handled differently
+              handleFinished(); // reset the timer !!!!! this should be handled differently
               return 0; // set clock to 0
             }
             //return prevTime > 0 ? prevTime - intervalTime : 0;
@@ -62,6 +63,12 @@ const Timer = () => {
     setIsStopped(false);
     setTime(isCountdown ? fixedCountdownTime : 0); // rest to countdown or stopwatch mode
   };
+
+  const handleFinished = () => {
+    setIsFinished(true);
+    setIsRunning(false);
+    setIsStopped(true);
+  }
 
   const toggleMode = () => {
     setIsRunning(false);
