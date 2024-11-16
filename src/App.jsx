@@ -3,7 +3,7 @@ import './App.scss'
 import Exercises from './components/Exercises/Exercises'
 import SingleExercise from './components/SingleExercise/SingleExercise'
 import Profile from './components/Profile/Profile'
-import TimerTest from './components/Timer/TimerTest'
+import Timer from './components/Timer/Timer'
 import Layout from './components/Layout/Layout'
 import Home from './components/Home/Home'
 import { exercises } from './data/exercises.json' // import the exercises.json file
@@ -21,7 +21,7 @@ function App() {
         <Route element={<Layout data={exerciseData} />}>
           <Route path="/exercises" element={<Exercises data={exerciseData}/>}></Route>
           <Route path="/exercises/:id" element={<SingleExercise data={exerciseData}/>}></Route>
-          <Route path="/timer" element={<TimerTest />}></Route>
+          <Route path="/timer" element={<Timer />}></Route>
           <Route path="/profile" element={<Profile />}></Route>
           <Route path="/" element={<Home />}></Route>
         </Route>  

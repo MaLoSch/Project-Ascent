@@ -60,11 +60,19 @@ function TimerTest() {
     setTimerState(newState);
   }
 
-  const changeHours = () => {}
-  const changeMinutes = () => {}
-  const changeSeconds = () => {}
+  const changeHours = () => {
+    console.log("hours")
+  }
+  
+  const changeMinutes = () => {
+    console.log("minutes")
+  }
+  const changeSeconds = () => {
+    console.log("seconds")
+  }
 
   const formatTime = (time) => {
+
     const seconds = Math.floor(time / 1000) % 60;
     const minutes = Math.floor(time / 60000);
     const hours = Math.floor(time / 3600000);
@@ -74,15 +82,6 @@ function TimerTest() {
       <span onClick={changeMinutes} className="minutes">{String(minutes).padStart(2, '0')}</span>:
       <span onClick={changeSeconds} className="seconds">{String(seconds).padStart(2, '0')}</span>
     </>;
-
-    time = <>
-      <span>00</span>
-      :
-      <span>00</span>
-      :
-      <span>00</span>
-    </>
-    return time;
   }
 
   // function to get the controls based on the current timer mode and timer state
@@ -90,6 +89,8 @@ function TimerTest() {
     
     // variable to store the control UI
     let controls;
+
+    console.log("re-render")
 
     switch(timerState) {
       // when the timer is idle
@@ -150,7 +151,6 @@ function TimerTest() {
             <span className="slider round" />
           </label>
           <p className="timer-label">Stopwatch</p>
-              {/* {isCountdown ? "Switch to Stopwatch" : "Switch to Countdown"} */ }
         </div>
       </section>
 

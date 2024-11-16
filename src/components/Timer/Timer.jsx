@@ -123,7 +123,6 @@ function Timer() {
         </div>
 
         <div className="timer-controls">
-
           {!isRunning ? (
             <button onClick={handleStart}>
               <PlayArrowOutlinedIcon fontSize='.75rem' />
