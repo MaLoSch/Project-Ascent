@@ -11,8 +11,41 @@ function TimerTest() {
   const [countdownTime, setCountdownTime] = useState(3000);
   const [time, setTime] = useState(0);
 
+  const intervalTime = 500; // interval used to increment / decrement time
+
   useEffect(() => {
-    // interval will be used here
+    let intervalId; // variable to store setInterval function. This is used to clean up the interval when unmounting the component
+    
+    if(timerState === 'running') {
+      
+      // update time every interval when the timer is running
+      intervalId = setInterval(() => {
+        
+        // useState function to set the time (where does prevTime come from?)
+        setTime(prevTime => {
+          
+          if(timerMode === 'countdown') {
+            // countdown mode
+
+            if(prevTime > 0) {
+              // there is still time left in the countdown
+              return prevTime - intervalTime; // substract intervalTime from the remaining time
+            } else {
+              // no time remaining
+              setTimerState('finished')
+              return 0;
+            }
+          } else {
+            // stopwatch mode
+            return prevTime + intervalTime; // add intervalTime to prevTime
+          }
+        });
+      }, intervalTime);
+    }
+
+    // Clean-up interval when component dismounts or when timer stops
+    return () => clearInterval(intervalId);
+
   }, [timerMode, timerState]);
 
   const toggleTimerMode = () => {
