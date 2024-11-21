@@ -5,10 +5,12 @@
       "id": 0,
       "description": "A great endurance exercise to keep you moving for extended periods.",
       "howTo": ["Perform continuous, low-intensity climbing for 10 minutes on easy terrain, focusing on smooth, controlled movements. This helps build endurance without straining muscles."],
+      "info": "short additional information",
       "heroImage": "arc10",
       "effect": ["endurance"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
@@ -16,10 +18,12 @@
       "id": 1,
       "description": "Alternating between activity and rest helps maintain balance and stamina.",
       "howTo": ["Alternate between one minute of climbing and one minute of rest. During the active phase, climb steadily, and use the rest phase to recover while staying active with light movements."],
+      "info": "short additional information",
       "heroImage": "1on1off",
       "effect": ["endurance"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
@@ -27,10 +31,12 @@
       "id": 2,
       "description": "This training method splits your efforts equally for better results.",
       "howTo": ["Climb for 50% of your maximum intensity for an extended period, then rest for an equal amount of time. This alternating pattern trains both endurance and power recovery."],
+      "info": "short additional information",
       "heroImage": "50-50",
       "effect": ["unknown"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
@@ -38,10 +44,12 @@
       "id": 3,
       "description": "Focus on short bursts of effort with this high-intensity drill.",
       "howTo": ["Hang on a fingerboard for 7 seconds, then rest for 3 seconds. Repeat for several cycles. This helps build finger strength and endurance for short, intense holds."],
+      "info": "short additional information",
       "heroImage": "73s",
       "effect": ["finger strength", "endurance"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "3",
       "equipment": ["Hangboard", "Lifting Edge"]
     },
     {
@@ -49,10 +57,12 @@
       "id": 4,
       "description": "Aerobic endurance is built over time with consistent pacing in this exercise.",
       "howTo": ["Climb for 4 minutes at a low intensity without stopping. Rest for 4 minutes, then repeat. Focus on maintaining a steady pace to improve aerobic capacity."],
+      "info": "short additional information",
       "heroImage": "aero4",
       "effect": ["endurance", "aerobic"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
@@ -60,10 +70,12 @@
       "id": 5,
       "description": "A stretch focused on increasing flexibility and range of motion in the back.",
       "howTo": ["Kneel on the floor and extend your arms forward, palms down. Slowly press your chest toward the ground, stretching the sides of your back. Hold for 30 seconds, then relax."],
+      "info": "short additional information",
       "heroImage": "latissimusDorsiStretch",
       "effect": ["back", "stretch"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Floor"]
     },
     {
@@ -71,10 +83,12 @@
       "id": 6,
       "description": "Relieves tension in the hips and improves posture.",
       "howTo": ["Step one leg forward into a lunge position, keeping your back leg straight. Push your hips forward to stretch the hip flexor of the back leg. Hold for 30 seconds on each side."],
+      "info": "short additional information",
       "heroImage": "hipFlexorStretch",
       "effect": ["hip", "stretch"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Floor"]
     },
     {
@@ -82,10 +96,12 @@
       "id": 7,
       "description": "A deep stretch that targets the glutes, helping in mobility.",
       "howTo": ["From a kneeling position, bring one leg forward with the knee bent and the other leg extended behind you. Lower your hips toward the floor to stretch the glute and hip muscles. Hold for 30 seconds."],
+      "info": "short additional information",
       "heroImage": "pidgeonStretch",
       "effect": ["glute", "stretch"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Floor"]
     },
     {
@@ -93,10 +109,12 @@
       "id": 8,
       "description": "An essential stretch for preventing injury in the legs.",
       "howTo": ["Stand and bend forward at the waist, reaching toward your toes. Keep your legs straight but not locked. Hold for 30 seconds to stretch the hamstrings, then slowly return to standing."],
+      "info": "short additional information",
       "heroImage": "hamstringStretch",
       "effect": ["hamstring", "stretch"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Floor"]
     },
     {
@@ -104,10 +122,12 @@
       "id": 9,
       "description": "Running builds both physical endurance and mental resilience.",
       "howTo": ["Start with a warm-up walk or light jog. Increase speed gradually, maintaining a steady pace for the duration of the run. Cool down by walking or jogging at a slower pace."],
+      "info": "short additional information",
       "heroImage": "run",
       "effect": ["endurance"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Treadmill", "Road", "Trail"]
     },
     {
@@ -115,10 +135,12 @@
       "id": 10,
       "description": "A method for assessing workout intensity based on perceived exertion.",
       "howTo": ["Perform an exercise while monitoring your level of exertion on a scale of 1-10, with 10 being the most intense. Adjust intensity according to the desired difficulty level."],
+      "info": "short additional information",
       "heroImage": "liftPinch",
       "effect": ["finger strength"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Pinch block"]
     },
     {
@@ -126,10 +148,12 @@
       "id": 11,
       "description": "Strength is built with high-effort intervals and shorter rest periods.",
       "howTo": ["Perform 5 sets of 3 intense climbing moves or hangs, with short rest periods in between. Focus on maximal effort during each set to build power and strength."],
+      "info": "short additional information",
       "heroImage": "strengthIntervals",
       "effect": ["strength", "power"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
     },
     {
@@ -137,10 +161,12 @@
       "id": 12,
       "description": "Push yourself to the limit with maximum effort climbs on the board.",
       "howTo": ["Climb on a training board using difficult holds or sequences. Perform short, intense sessions focused on maximal effort with longer rest periods to allow full recovery between attempts."],
+      "info": "short additional information",
       "heroImage": "boardClimbing",
       "effect": ["strength", "power", "core"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "3",
       "equipment": ["Climbing board", "System wall", "Spray wall"]
     },
     {
@@ -148,10 +174,12 @@
       "id": 13,
       "description": "A structured climbing sequence that helps with strength and technique.",
       "howTo": ["Climb increasingly difficult boulders in a pyramid sequence (e.g., easy, medium, hard, medium, easy). This method builds both strength and technique as you vary difficulty and intensity."],
+      "info": "short additional information",
       "heroImage": "boulderPyramid",
       "effect": ["endurance", "power", "core"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
@@ -159,10 +187,12 @@
       "id": 14,
       "description": "An exercise where you hold your body straight and parallel to the floor while resting on your toes and elbows.",
       "howTo": ["From lying face down on a mat and place your elbows under your shoulders. Place your toes onto the mat and then push your forearms as you raise your body from the mat. Engage your abdominal muscles and try and form a straight line with your whole body. Keep your gaze down while taking steady, even breaths."],
+      "info": "short additional information",
       "heroImage": "plank",
       "effect": ["core"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Floor"]
     },
     {
@@ -170,10 +200,12 @@
       "id": 15,
       "description": "Compared to classic 4x4s, ENOMs (Every Minute On the Minute) may allow you to improve your anaerobic endurance for a longer sustained time.",
       "howTo": ["Choose a moderate boulder and set a timer to 1 minute. Climb the boulder and rest for the remainder of the minute. At the start of the next minute, climb the boulder again. Do this for 4 to 10 minutes to complete a set and aim for 1-3 sets."],
+      "info": "short additional information",
       "heroImage": "enom",
       "effect": ["anaerobic endurance", "strength endurance"],
       "time": "45 min",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
@@ -181,10 +213,12 @@
       "id": 16,
       "description": "A high volume bouldering session that should be performed on a boulder wall or steep board.",
       "howTo": ["Aim to complete 20 boulders that will achieve the correct stimulus. You have an hour to attempt and complete all 20 boulders. That means you have roughly 3 minutes for each boulder. Attempt to flash every problem but you can have a second attempt, if you fail. Once the boulder has been completed or you failed a on your second attempt, you can rest for the remainder of the three minutes. You get the most out of this exercise if you are prepared to push yourself consistently."],
+      "info": "short additional information",
       "heroImage": "none",
       "effect": ["strength endurance"],
       "time": "60 minutes",
       "effort": "8/10 RPE",
+      "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
     },
     {
@@ -198,11 +232,48 @@
         "Every repetition should be performed with good form, in full range of motion and in a controlled way.",
         "Keep your scapula enfafed and don't allow winging in order to get a greater range of movement. Your range of movement may differ from the one in the images."
       ],
+      "info": "short additional information",
       "heroImage": "none",
       "effect": ["conditioning"],
       "time": "5 minutes",
       "effort": "12 RM",
+      "level": "1",
       "equipment": ["Dumbbell", "Bench"]
+    },
+    {
+      "name": "Contrast",
+      "id": 18,
+      "description": "Exercise to improve various aspects of your climbing.",
+      "howTo": [
+        "Choose 8 boulders which should be semi-difficult for you. The boulders should not require any dynamic moves.",
+        "Climb each boulder 3 times. The first time as static as possible. The second time as dynamic as possible. And the third time should be an ideal blend of the static and dynamic attempts.", 
+        "Be aware of your breathing as it should be in harmony with your climbing rythm and avoid holding your breath for longer periods.",
+        "Take a short rest between attempts and a longer rest between boulders."
+      ],
+      "info": "short additional information",
+      "heroImage": "contrast",
+      "effect": ["lock-off", "core", "tension", "technique", "coordination", "footwork"],
+      "time": "90 minutes",
+      "effort": "7 RPE",
+      "level": "1",
+      "equipment": ["Climbing wall"]
+    },
+    {
+      "name": "Match",
+      "id": 19,
+      "description": "Exercise to improve your climbing technique and endurance.",
+      "howTo": [
+        "Pick 4 semi difficult boulders and climb each 2-3 times.",
+        "While climbing, make sure to match each hold.",
+        "Take a 1 to 2 minute rest between repetitions and 5 minute rest between sets."
+      ],
+      "info": "short additional information",
+      "heroImage": "match",
+      "effect": ["technique", "footwork", "endurance"],
+      "time": "40 minutes",
+      "effort": "7 RPE",
+      "level": "2",
+      "equipment": ["Climbing wall"]
     }
   ]
 }

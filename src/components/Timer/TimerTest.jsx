@@ -9,7 +9,7 @@ function TimerTest() {
   const [timerMode, setTimerMode] = useState('countdown'); // keep track of timer mode (countdown and stopwatch)
   const [timerState, setTimerState] = useState('idle'); // states to keep track of different states
   const [countdownTime, setCountdownTime] = useState(3000);
-  const [time, setTime] = useState(0);
+  const [time, setTime] = useState(countdownTime);
 
   const intervalTime = 500; // interval used to increment / decrement time
 
@@ -51,13 +51,31 @@ function TimerTest() {
   const toggleTimerMode = () => {
     if(timerMode === 'countdown') {
       setTimerMode('stopwatch');
+      setTimerState('idle')
+      setTime(0)
     } else {
       setTimerMode('countdown');
+      setTimerState('idle')
+      setTime(countdownTime)
     }
   }
 
   const handleTimerStateChange = (newState) => {
     setTimerState(newState);
+
+    switch(timerState) {
+      case 'idle':
+        
+        break;
+      case 'running':
+        break;
+      case 'paused':
+        break;
+      case 'finished':
+        break;
+      default:
+        break;
+    }
   }
 
   const changeHours = () => {
@@ -90,8 +108,6 @@ function TimerTest() {
     // variable to store the control UI
     let controls;
 
-    console.log("re-render")
-
     switch(timerState) {
       // when the timer is idle
       case 'idle':
@@ -123,6 +139,17 @@ function TimerTest() {
               <PlayArrowOutlinedIcon fontSize='.75rem' />
               <span className="button-label">Resume</span>
             </button>
+            <button onClick={() => handleTimerStateChange('idle')}>
+              <StopOutlinedIcon fontSize='.75rem' />
+              <span className="button-label">Reset</span>
+            </button>
+          </>
+        break;
+
+      // when the timer is finished (countdown only)
+      case 'finished':
+        controls = 
+          <>
             <button onClick={() => handleTimerStateChange('idle')}>
               <StopOutlinedIcon fontSize='.75rem' />
               <span className="button-label">Reset</span>
