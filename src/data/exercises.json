@@ -11,7 +11,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
+      "variation": []
     },
     {
       "name": "1 on 1 off active",
@@ -24,7 +25,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
+      "variation": []
     },
     {
       "name": "50:50",
@@ -37,7 +39,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
+      "variation": []
     },
     {
       "name": "7:3s",
@@ -50,7 +53,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "3",
-      "equipment": ["Hangboard", "Lifting Edge"]
+      "equipment": ["Hangboard", "Lifting Edge"],
+      "variation": []
     },
     {
       "name": "Aero 4's",
@@ -63,7 +67,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
+      "variation": []
     },
     {
       "name": "Latissimus Dorsi Stretch",
@@ -76,7 +81,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Floor"]
+      "equipment": ["Floor"],
+      "variation": []
     },
     {
       "name": "Hip Flexor Stretch",
@@ -89,7 +95,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Floor"]
+      "equipment": ["Floor"],
+      "variation": []
     },
     {
       "name": "Glute Stretch / Pigeon Pose",
@@ -102,7 +109,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Floor"]
+      "equipment": ["Floor"],
+      "variation": []
     },
     {
       "name": "Hamstring Stretch",
@@ -115,7 +123,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Floor"]
+      "equipment": ["Floor"],
+      "variation": []
     },
     {
       "name": "Run",
@@ -128,7 +137,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Treadmill", "Road", "Trail"]
+      "equipment": ["Treadmill", "Road", "Trail"],
+      "variation": []
     },
     {
       "name": "MS RPE",
@@ -141,7 +151,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Pinch block"]
+      "equipment": ["Pinch block"],
+      "variation": []
     },
     {
       "name": "Strength Intervals / 5x3s",
@@ -154,7 +165,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
+      "variation": []
     },
     {
       "name": "Board climbing - Max efforts",
@@ -167,7 +179,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "3",
-      "equipment": ["Climbing board", "System wall", "Spray wall"]
+      "equipment": ["Climbing board", "System wall", "Spray wall"],
+      "variation": []
     },
     {
       "name": "Boulder Pyramid",
@@ -180,7 +193,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
+      "variation": []
     },
     {
       "name": "Plank",
@@ -193,7 +207,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Floor"]
+      "equipment": ["Floor"],
+      "variation": []
     },
     {
       "name": "ENOM",
@@ -206,7 +221,8 @@
       "time": "45 min",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
+      "variation": []
     },
     {
       "name": "Boulder Mileage",
@@ -219,7 +235,8 @@
       "time": "60 minutes",
       "effort": "8/10 RPE",
       "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"]
+      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
+      "variation": []
     },
     {
       "name": "Shoulder Rotations",
@@ -238,7 +255,8 @@
       "time": "5 minutes",
       "effort": "12 RM",
       "level": "1",
-      "equipment": ["Dumbbell", "Bench"]
+      "equipment": ["Dumbbell", "Bench"],
+      "variation": []
     },
     {
       "name": "Contrast",
@@ -256,7 +274,8 @@
       "time": "90 minutes",
       "effort": "7 RPE",
       "level": "1",
-      "equipment": ["Climbing wall"]
+      "equipment": ["Climbing wall"],
+      "variation": []
     },
     {
       "name": "Match",
@@ -273,7 +292,50 @@
       "time": "40 minutes",
       "effort": "7 RPE",
       "level": "2",
-      "equipment": ["Climbing wall"]
+      "equipment": ["Climbing wall"],
+      "variation": []
+    },
+    {
+      "name": "Tic Tac Toe",
+      "id": 20,
+      "description": "This exercise improves your body tension and your footwork. Depending on the holds you can also work your arms for endurance gains.",
+      "howTo": [
+        "Pick 2 holds on a system wall which are about shoulder width apart and do not have an incut shape. You should be able to hang for about 20 seconds on those holds.",
+        "Hang on the holds and try to catch a hold with your left foot far down on your left side.",
+        "Return to the center and then catch a hold with your left foot on hip height of your left side.",
+        "Repeat this one more time with a hold overhead on left side.",
+        "Repeat the same on the right hand side with three holds on different levels. Once finished, you have done 1 rep.",
+        "Do 3-4 repetitions and two sets with a two minute rest between sets."
+      ],
+      "info": "",
+      "heroImage": "none",
+      "effect": ["footwork", "endurance", "core"],
+      "time": "10 minutes",
+      "effort": "7 RPE",
+      "level": "2",
+      "equipment": ["System wall"],
+      "variation": []
+    },
+    {
+      "name": "Diagonal",
+      "id": 21,
+      "description": "Improve your body tension by hanging with only two limbs in steep terrain.",
+      "howTo": [
+        "Pick a good hold directly at the edge of the roof.",
+        "Hang off the hold with both of your arms and pick a far away foot hold with your right foot.",
+        "Now let go off your right hand so you are effectively hanging off your left hand and your right foot.",
+        "Hold this position for 3-5 seconds",
+        "Switch foot and hand afterwards. This is one rep.",
+        "Do 5-8 reps for one set. Do two sets total with a 2 minute rest between."
+      ],
+      "info": "You can vary the difficulty by difficulty by varying the distance of foothold and by hanging of straight arms or locking off.",
+      "heroImage": "none",
+      "effect": ["core"],
+      "time": "5 minutes",
+      "effort": "7 RPE",
+      "level": "2",
+      "equipment": ["Climbing wall"],
+      "variation": []
     }
   ]
 }
