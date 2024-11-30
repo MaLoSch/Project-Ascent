@@ -1,55 +1,44 @@
 import { useEffect, useState } from "react"; // import required react modules
 import "./ClipImage.scss" // import CSS file for component
 
-function ClipImage({ imageName = "default", range = 8, height="auto", className=""}) {
+function ClipImage({ imageName = "default", range = 8, height="auto", className="", style="random" }) {
 
     // imageName -> The name of the image that should be pulled (currently they all need to be in the same folder)
     // range -> how much "movement" is in the image corners
     // height -> how tall should the image be displayed
     // className -> animate, hero
+    // style -> pre-defined image clipping paths (see below for options)
 
     // function to retrieve a random position for each corner of the polygon mask
-    function randomPos() {
-        let randomPos;
-        let chance = Math.random();
-        if(chance > .5) {
-            randomPos = 0;
+
+    const [clipStyle, setClipStyle] = useState(() => {
+        if(style === "random") {
+            let options = ['p-up', 'p-down', 'corner-tl', 'corner-tr', 'corner-bl', 'corner-br', 'full'];
+            let randomIndex = Math.floor(Math.random()* options.length);
+            return(options[randomIndex])
         } else {
-            randomPos = Math.floor(Math.random()*range)
+            return style;
         }
-        return randomPos;
-    }
-    
-    // function when the image is clicked
-    function handleClick() {
-        setPoints(points => ({
-            ...points,
-            x1: randomPos(),
-            y1: randomPos(),
-            x2: randomPos(),
-            y2: 100 - randomPos(),
-            x3: 100 - randomPos(),
-            y3: 100 - randomPos(),
-            x4: 100 - randomPos(),
-            y4: randomPos()
-        }));
-    }
+    })
 
-    const [points, setPoints] = useState(
-        {
-            x1: randomPos(),
-            y1: randomPos(),
-
-            x2: randomPos(),
-            y2: 100 - randomPos(),
-            
-            x3: 100 - randomPos(),
-            y3: 100 - randomPos(),
-            
-            x4: 100 - randomPos(),
-            y4: randomPos()
+    function createClipPath() {
+        switch(clipStyle) {
+            case 'p-up':
+                return `polygon(${0}% ${0+range}%, ${0}% ${100}%, ${100}% ${100-range}%, ${100}% ${0}%)`;
+            case 'p-down':
+                return `polygon(${0}% ${0}%, ${0}% ${100-range}%, ${100}% ${100}%, ${100}% ${0+range}%)`;
+            case 'corner-tl':
+                return `polygon(${0+range}% ${0+range}%, ${0}% ${100}%, ${100}% ${100}%, ${100}% ${0}%)`;
+            case 'corner-tr':
+                return `polygon(${0}% ${0}%, ${0}% ${100}%, ${100}% ${100}%, ${100-range}% ${0+range}%)`;
+            case 'corner-br':
+                return `polygon(${0}% ${0}%, ${0}% ${100}%, ${100-range}% ${100-range}%, ${100}% ${0}%)`;
+            case 'corner-bl':
+                return `polygon(${0}% ${0}%, ${0+range}% ${100-range}%, ${100}% ${100}%, ${100}% ${0}%)`;
+            default: // full
+                return `polygon(${0}% ${0}%,${0}% ${100}%,${100}% ${100}%,${100}% ${0}%)`;
         }
-    );
+    }
 
     const [imgSrc, setImgSrc] = useState(null)
 
@@ -69,9 +58,8 @@ function ClipImage({ imageName = "default", range = 8, height="auto", className=
     return(
         <>
              <div className={className}
-                onClick={handleClick}
                 style= {{
-                    clipPath: `polygon(${points.x1}% ${points.y1}%,${points.x2}% ${points.y2}%,${points.x3}% ${points.y3}%,${points.x4}% ${points.y4}%)`,
+                    clipPath: createClipPath(),
                     height: `${height}`,
                     backgroundImage: `url(${imgSrc})`
                 }}

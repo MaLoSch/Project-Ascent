@@ -28,34 +28,35 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
 
 ### To-Do for current MVP
 - [ ] Bugs
-    - [ ] Timer controls don't seem to be centered
-    - [ ] Timer toggle needs to be styled
-    - [ ] Timer should pause countdown when reaching 0
+    - [X] Timer controls don't seem to be centered
+    - [X] Timer toggle needs to be styled
+    - [X] Timer should pause countdown when reaching 0
+    - [ ] The countdown is not done when reaching 0. This is evident by the controls not changing for another second. The milliseconds also need to count down to 0 first for the controls to change. When using the countdown, rounding the seconds should work differently.
 - [X] Accordion component
     - [X] Description accordion should be open by default
     - [X] Add state to accordion component to control open/closed state
-- [ ] Organize tasks by priority
-- [ ] How to accordion should have description in steps
+- [X] How to accordion should have description in steps
 - [ ] Home page
     - [x] Image to stretch over the available space
     - [ ] Image to change (random or after a certain time)
-- [ ] Clip image component
-    - [ ] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
-    - [ ] Allow animation
+- [X] Clip image component
+    - [X] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
 - [x] CSS for general app structure
     - [x] Fix bugs with general layout
     - [x] Use of grid instead of flexbox for future scaleability
-- [ ] Bottom navigation
+- [X] Bottom navigation
     - [x] Add logic to highlight active page
     - [x] Add icon placeholder
     - [x] Add icon from Google Fonts
-    - [ ] Finish styling of bottom nav
-- [ ] CSS for search component
+    - [X] Finish styling of bottom nav
+- [X] CSS for search component
 - [ ] Import correct font
     - [ ] Add font to gitignore
     - [ ] Make sure there is a default font
 - [ ] Add comments to all files
 - [x] Install SASS for easier CSS management
+- [ ] Timer component
+    - [ ] Finish styling of the component
 - [x] Bottom navigation should change when on Single Exercise page
 - [ ] Layout component can be improved
     - [ ] Clean up functions inside the component
