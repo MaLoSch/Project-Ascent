@@ -1,0 +1,15 @@
+.notification {
+    padding: 8px;
+    background-color: var(--orange-black);
+    display: flex;
+    align-items: center;
+    color: var(--orange-35);
+
+    .notification-icon {
+        margin: 0 8px 0 0;
+    }
+
+    & p {
+        color: inherit;
+    }
+}

@@ -12,7 +12,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "1 on 1 off active",
@@ -26,7 +27,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "50:50",
@@ -40,7 +42,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "7:3s",
@@ -54,7 +57,8 @@
       "effort": "8/10 RPE",
       "level": "3",
       "equipment": ["Hangboard", "Lifting Edge"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Aero 4's",
@@ -68,7 +72,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Latissimus Dorsi Stretch",
@@ -82,7 +87,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Floor"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Hip Flexor Stretch",
@@ -96,7 +102,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Floor"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Glute Stretch / Pigeon Pose",
@@ -110,7 +117,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Floor"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Hamstring Stretch",
@@ -124,7 +132,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Floor"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Run",
@@ -138,7 +147,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Treadmill", "Road", "Trail"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "MS RPE",
@@ -152,7 +162,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Pinch block"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Strength Intervals / 5x3s",
@@ -166,7 +177,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Board climbing - Max efforts",
@@ -180,7 +192,8 @@
       "effort": "8/10 RPE",
       "level": "3",
       "equipment": ["Climbing board", "System wall", "Spray wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Boulder Pyramid",
@@ -194,7 +207,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Plank",
@@ -208,7 +222,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Floor"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "ENOM",
@@ -222,7 +237,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Boulder Mileage",
@@ -236,7 +252,8 @@
       "effort": "8/10 RPE",
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Shoulder Rotations",
@@ -256,7 +273,8 @@
       "effort": "12 RM",
       "level": "1",
       "equipment": ["Dumbbell", "Bench"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Contrast",
@@ -275,7 +293,8 @@
       "effort": "7 RPE",
       "level": "1",
       "equipment": ["Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your ."
     },
     {
       "name": "Match",
@@ -293,7 +312,8 @@
       "effort": "7 RPE",
       "level": "2",
       "equipment": ["Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     },
     {
       "name": "Tic Tac Toe",
@@ -314,7 +334,8 @@
       "effort": "7 RPE",
       "level": "2",
       "equipment": ["System wall"],
-      "variation": []
+      "variation": [],
+      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
     },
     {
       "name": "Diagonal",
@@ -335,7 +356,8 @@
       "effort": "7 RPE",
       "level": "2",
       "equipment": ["Climbing wall"],
-      "variation": []
+      "variation": [],
+      "notification": false
     }
   ]
 }

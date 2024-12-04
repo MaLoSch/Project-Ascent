@@ -1,8 +1,9 @@
 import { useParams } from 'react-router-dom'
-import AccordionItem from '../../components/AccordionItem/AccordionItem'
-import ClipImage from '../../components/ClipImage/ClipImage'
-import Pill from '../../components/Pill/Pill'
-import Meta from '../../components/Meta/Meta'
+import AccordionItem from '../AccordionItem/AccordionItem'
+import ClipImage from '../ClipImage/ClipImage'
+import Pill from '../Pill/Pill'
+import Meta from '../Meta/Meta'
+import Notification from '../Notification/Notification'
 import './SingleExercise.scss'
 
 function SingleExercise(props) {
@@ -25,6 +26,14 @@ function SingleExercise(props) {
             <section>
                 <ClipImage imageName={exercise.heroImage} range="5" height="33vh" className="animate"></ClipImage>
             </section>
+
+            {exercise.notification ? 
+                <section className='side-padding'>
+                    <Notification msg={exercise.notification}></Notification>
+                </section>
+                :
+                ""
+            }
 
             <section className='side-padding'>
                 <div className="pill-container">
