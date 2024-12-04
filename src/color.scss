@@ -1,24 +1,35 @@
 /* scope of the color variables */
 :root {
-    --grey-white: #F3F2F2;
-    --grey-85: #DAD8D8;
-    --grey-75: #C1BEBD;
-    --grey-65: #A8A4A3;
-    --grey-55: #908A89;
-    --grey-45: #76716F;
-    --grey-35: #5C5857;
-    --grey-25: #423F3E;
-    --grey-15: #272625;
-    --grey-black: #0D0C0C;
+    --grey-white: hsl(0, 3%, 95%);
+    --grey-85: hsl(0, 3%, 85%);
+    --grey-75: hsl(0, 3%, 75%);
+    --grey-65: hsl(0, 3%, 65%);
+    --grey-55: hsl(0, 3%, 55%);
+    --grey-45: hsl(0, 3%, 45%);
+    --grey-35: hsl(0, 3%, 35%);
+    --grey-25: hsl(0, 3%, 25%);
+    --grey-15: hsl(0, 3%, 15%);
+    --grey-black: hsl(0, 3%, 5%);
 
-    --orange-white: #FEECE7;
-    --orange-85: #FBC5B7;
-    --orange-75: #F89F87;
-    --orange-65: #F57956;
-    --orange-55: #F25226;
-    --orange-45: #D9390D;
-    --orange-35: #A92C0A;
-    --orange-25: #782007;
-    --orange-15: #481304;
-    --orange-black: #180601;
+    --orange-white: hsl(13, 89%, 95%);
+    --orange-85: hsl(13, 89%, 85%);
+    --orange-75: hsl(13, 89%, 75%);
+    --orange-65: hsl(13, 89%, 65%);
+    --orange-55: hsl(13, 89%, 55%);
+    --orange-45: hsl(13, 89%, 45%);
+    --orange-35: hsl(13, 89%, 35%);
+    --orange-25: hsl(13, 89%, 25%);
+    --orange-15: hsl(13, 89%, 15%);
+    --orange-black: hsl(13, 89%, 5%);
+
+    --blue-white: hsl(210, 89%, 95%);
+    --blue-85: hsl(200, 89%, 85%);
+    --blue-75: hsl(200, 89%, 75%);
+    --blue-65: hsl(200, 89%, 65%);
+    --blue-55: hsl(200, 89%, 55%);
+    --blue-45: hsl(200, 89%, 45%);
+    --blue-35: hsl(200, 89%, 35%);
+    --blue-25: hsl(200, 89%, 25%);
+    --blue-15: hsl(200, 89%, 15%);
+    --blue-black: hsl(200, 89%, 5%);
 }
