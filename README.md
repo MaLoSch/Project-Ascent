@@ -36,9 +36,9 @@ For MVP 1 the following functionality should be available. Estimated timeframe i
     - [X] Description accordion should be open by default
     - [X] Add state to accordion component to control open/closed state
 - [X] How to accordion should have description in steps
-- [ ] Home page
+- [x] Home page
     - [x] Image to stretch over the available space
-    - [ ] Image to change (random or after a certain time)
+    - [x] Image to change (random or after a certain time)
 - [X] Clip image component
     - [X] Pre-define certain looks (parallelogram, diamond, full, random, etc.)
 - [x] CSS for general app structure

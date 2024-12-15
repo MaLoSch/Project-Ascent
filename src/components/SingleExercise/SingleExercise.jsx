@@ -24,12 +24,12 @@ function SingleExercise(props) {
         <div className='page-content'>
             
             <section>
-                <ClipImage imageName={exercise.heroImage} range="5" height="33vh" className="animate"></ClipImage>
+                <ClipImage imageName={exercise.heroImage} range="5" height="33vh" className="clipped"></ClipImage>
             </section>
 
             {exercise.notification ? 
                 <section className='side-padding'>
-                    <Notification msg={exercise.notification}></Notification>
+                    <Notification notification={exercise.notification}></Notification>
                 </section>
                 :
                 ""
@@ -48,9 +48,9 @@ function SingleExercise(props) {
             </section>
 
             <section className='side-padding'>
-                <AccordionItem title="Description" open={true}>
+                {/* <AccordionItem title="Description" open={true}> */}
                     <p>{exercise.description}</p>
-                </AccordionItem>
+                {/* </AccordionItem> */}
             </section>
 
             <section className='side-padding'>

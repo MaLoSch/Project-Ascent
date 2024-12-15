@@ -1,12 +1,15 @@
 import './Notification.scss'
-import InfoOutlinedIcon from '@mui/icons-material/InfoOutlined';
+import InfoIcon from '@mui/icons-material/Info';
+import ErrorIcon from '@mui/icons-material/Error';
 
-function Notification ({msg}) {
+function Notification (props) {
+
+    const {msg, type} = props.notification;
 
     return(
         <>
-            <div className="notification">
-                <InfoOutlinedIcon fontSize='.75rem' className='notification-icon'/>
+            <div className={`notification ${type==="info" ? `info` : `warning`}`}>
+                {type === "info" ? <InfoIcon fontSize='.75rem' className='notification-icon'/> : <ErrorIcon fontSize='.75rem' className='notification-icon'/>}
                 <p>{msg}</p>
             </div>
         </>

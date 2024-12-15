@@ -43,7 +43,10 @@
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "7:3s",
@@ -58,7 +61,10 @@
       "level": "3",
       "equipment": ["Hangboard", "Lifting Edge"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "info",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Aero 4's",
@@ -103,7 +109,10 @@
       "level": "1",
       "equipment": ["Floor"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Glute Stretch / Pigeon Pose",
@@ -118,7 +127,10 @@
       "level": "1",
       "equipment": ["Floor"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Hamstring Stretch",
@@ -148,7 +160,10 @@
       "level": "1",
       "equipment": ["Treadmill", "Road", "Trail"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "MS RPE",
@@ -163,7 +178,10 @@
       "level": "1",
       "equipment": ["Pinch block"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Strength Intervals / 5x3s",
@@ -223,7 +241,10 @@
       "level": "1",
       "equipment": ["Floor"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "ENOM",
@@ -238,7 +259,10 @@
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Boulder Mileage",
@@ -253,7 +277,10 @@
       "level": "1",
       "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Shoulder Rotations",
@@ -294,7 +321,10 @@
       "level": "1",
       "equipment": ["Climbing wall"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your ."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Match",
@@ -335,7 +365,10 @@
       "level": "2",
       "equipment": ["System wall"],
       "variation": [],
-      "notification": "Do not attempt this exercise when exhausted or at the end of your session."
+      "notification": {
+        "type": "warning",
+        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
+      }
     },
     {
       "name": "Diagonal",

@@ -7,15 +7,9 @@ image {
     clip-path: polygon(25% 25%, 0% 100%, 100% 100%, 80% 0%);
 }
 
-.animate {
-    transition: clip-path 0.5s ease-in-out;
+.clipped {
     width: 100%;
     /* height is set programatically */
     background-size: cover;
     background-position: center center;
-}
-
-.hero {
-    -webkit-filter: grayscale(100%) contrast(130%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%) contrast(130%);
 }
