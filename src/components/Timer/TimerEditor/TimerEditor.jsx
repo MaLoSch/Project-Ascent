@@ -1,12 +1,13 @@
 import { useState } from "react";
 
+// TimerEditor component which receives time and setTime from the parent (Timer) component
 const TimeEditor = ({ time, setTime }) => {
-  const [editingField, setEditingField] = useState(null);
-  const [inputValue, setInputValue] = useState("");
+  const [editingField, setEditingField] = useState(null); // state to store which field (span) is being edited
+  const [inputValue, setInputValue] = useState(""); // state for the input value
 
-  const handleSpanClick = (field) => {
-    setEditingField(field);
-    setInputValue(time[field]);
+  const handleSpanClick = (field) => { // function to handle a click on a span element
+    setEditingField(field); // set the editing field (span)
+    setInputValue(time[field]); // get the current time and put it into the input field
   };
 
   const handleInputChange = (e) => {

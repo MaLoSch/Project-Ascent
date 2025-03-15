@@ -3,8 +3,8 @@ import {
     useNavigate // required for back button functionality
 } from 'react-router-dom'
 import './Header.scss' // import the scss for this component
-import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
-import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
+//import FilterAltOutlinedIcon from '@mui/icons-material/FilterAltOutlined';
+//import MenuOutlinedIcon from '@mui/icons-material/MenuOutlined';
 import ArrowBackOutlinedIcon from '@mui/icons-material/ArrowBackOutlined';
 import pa from "../../assets/PA.svg"
 
@@ -13,6 +13,7 @@ function Header({type = "nav"}) {
     const navigate = useNavigate();
     
     const showLeftToolbar = () => {
+        console.log(type)
         if(type === "timer") {
             return(
                 <div className="back-button" onClick={() => {navigate(-1)}}>
@@ -46,6 +47,10 @@ function Header({type = "nav"}) {
                 </div>
 
                 <div className="right-header">
+                    <p style={{
+                        fontSize:".5rem",
+                        textAlign:"right",
+                    }}>version 0.8.1</p>
                     {/* <FilterAltOutlinedIcon /> Hiding filtering icon for now as the functionality is not available at the moment */ }
                 </div>
             </div>
