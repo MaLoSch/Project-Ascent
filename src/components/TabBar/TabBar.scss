@@ -23,10 +23,10 @@ ul.tab-bar {
             }
 
             &.active {
-                color: var(--orange-55);
-                -webkit-box-shadow: inset 0px -4px 0px -3px var(--orange-55);
-                -moz-box-shadow: inset 0px -4px 0px -3px var(--orange-55);
-                box-shadow: inset 0px -4px 0px -3px var(--orange-55);
+                color: var(--grey-white);
+                -webkit-box-shadow: inset 0px -4px 0px -3px var(--grey-white);
+                -moz-box-shadow: inset 0px -4px 0px -3px var(--grey-white);
+                box-shadow: inset 0px -4px 0px -3px var(--grey-white);
                 
                 & .tab-bar-icon {
                     transform: translateY(-10px);
