@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
 import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import TimeEditor from './TimerEditor/TimerEditor'; // Import the TimeEditor component
+import NoSleep from 'nosleep.js'; // library to prevent screen from sleeping / going dark. Used whenever the timer is active
 import './Timer.scss';
 
 function TimerTest() {
@@ -11,6 +12,7 @@ function TimerTest() {
   const [countdownTime, setCountdownTime] = useState(60000);
   const [time, setTime] = useState(countdownTime);
   const intervalTime = 500;
+  var noSleep = new NoSleep(); // create a new NoSleep instance
 
   useEffect(() => {
     let intervalId;
@@ -68,11 +70,21 @@ function TimerTest() {
     );
   };
 
+  const handleStart = () => {
+    setTimerState('running'); // set TimerState to "running"
+    noSleep.enable(); // enable wake lock
+  }
+
+  const handleIdle = () => {
+    setTimerState('idle'); // set TimerState to "idle"
+    noSleep.disable(); // disable wake lock
+  }
+
   const getControls = () => {
     switch (timerState) {
       case 'idle':
         return (
-          <button onClick={() => setTimerState('running')}>
+          <button onClick={handleStart}>
             <PlayArrowOutlinedIcon fontSize='.75rem' />
             <span className="button-label">Start</span>
           </button>
@@ -91,7 +103,7 @@ function TimerTest() {
               <PlayArrowOutlinedIcon fontSize='.75rem' />
               <span className="button-label">Resume</span>
             </button>
-            <button onClick={() => setTimerState('idle')}>
+            <button onClick={handleIdle}>
               <StopOutlinedIcon fontSize='.75rem' />
               <span className="button-label">Reset</span>
             </button>
@@ -99,7 +111,7 @@ function TimerTest() {
         );
       case 'finished':
         return (
-          <button onClick={() => setTimerState('idle')}>
+          <button onClick={handleIdle}>
             <StopOutlinedIcon fontSize='.75rem' />
             <span className="button-label">Reset</span>
           </button>
