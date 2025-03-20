@@ -3,11 +3,11 @@ import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
 import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import TimeEditor from './TimerEditor/TimerEditor'; // Import the TimeEditor component
-import useNoSleep from "use-no-sleep";
-import './Timer.scss';
+import useNoSleep from "use-no-sleep"; // library to prevent the screen from sleeping – more here https://github.com/JoshuaKGoldberg/use-no-sleep
+import './Timer.scss'; // import styling for the timer component
 
 function TimerTest() {
-  const [sleeping, setSleeping] = useState(false); // TEST
+  const [sleeping, setSleeping] = useState(false); // state to determine if wake lock (using use-no-sleep) should be active or not 
   const [timerMode, setTimerMode] = useState('countdown'); // 'countdown' or 'stopwatch'
   const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
   const [countdownTime, setCountdownTime] = useState(60000);
@@ -40,6 +40,7 @@ function TimerTest() {
   }, [timerMode, timerState]);
 
   const toggleTimerMode = () => {
+    setSleeping(false); // wake lock should be deactivated when the mode is changed as the timer is also set to idle
     setTimerMode(prevMode => {
       const newMode = prevMode === 'countdown' ? 'stopwatch' : 'countdown';
       setTimerState('idle');
