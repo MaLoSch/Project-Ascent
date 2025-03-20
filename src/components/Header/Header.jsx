@@ -13,7 +13,6 @@ function Header({type = "nav"}) {
     const navigate = useNavigate();
     
     const showLeftToolbar = () => {
-        console.log(type)
         if(type === "timer") {
             return(
                 <div className="back-button" onClick={() => {navigate(-1)}}>
