@@ -41,7 +41,7 @@ const TimeEditor = ({ time, setTime }) => {
   
 
   return (
-    <div style={{ fontSize: "4rem" }}>
+    <div className="time">
       {["hours", "minutes", "seconds"].map((field, index) => (
         <span key={field}>
           {editingField === field ? (
@@ -54,7 +54,8 @@ const TimeEditor = ({ time, setTime }) => {
               onKeyDown={handleKeyDown}
               min={editingField === "hours" ? undefined : 0}
               max={editingField === "hours" ? undefined : 59}
-              style={{ width: "80px", fontSize: "4rem" }}
+              style={{ width: "80px"}}
+              className="time"
             />
           ) : (
             <span onClick={() => handleSpanClick(field)}>{String(time[field]).padStart(2, '0')}</span>

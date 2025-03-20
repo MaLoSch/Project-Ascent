@@ -104,5 +104,9 @@
 
     & .timer-counter {
         color: var(--grey-55);
+
+        & .time {
+            font-size: 4rem;
+        }
     }
 }
