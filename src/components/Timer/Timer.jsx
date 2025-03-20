@@ -3,16 +3,18 @@ import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
 import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
 import TimeEditor from './TimerEditor/TimerEditor'; // Import the TimeEditor component
-import NoSleep from 'nosleep.js'; // library to prevent screen from sleeping / going dark. Used whenever the timer is active
+import useNoSleep from "use-no-sleep";
 import './Timer.scss';
 
 function TimerTest() {
+  const [sleeping, setSleeping] = useState(false); // TEST
   const [timerMode, setTimerMode] = useState('countdown'); // 'countdown' or 'stopwatch'
   const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
   const [countdownTime, setCountdownTime] = useState(60000);
   const [time, setTime] = useState(countdownTime);
   const intervalTime = 500;
-  var noSleep = new NoSleep(); // create a new NoSleep instance
+
+  useNoSleep(sleeping);
 
   useEffect(() => {
     let intervalId;
@@ -71,13 +73,13 @@ function TimerTest() {
   };
 
   const handleStart = () => {
+    setSleeping(true);
     setTimerState('running'); // set TimerState to "running"
-    noSleep.enable(); // enable wake lock
   }
 
   const handleIdle = () => {
+    setSleeping(false);
     setTimerState('idle'); // set TimerState to "idle"
-    noSleep.disable(); // disable wake lock
   }
 
   const getControls = () => {
