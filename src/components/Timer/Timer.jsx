@@ -7,17 +7,27 @@ import useNoSleep from "use-no-sleep"; // library to prevent the screen from sle
 import './Timer.scss'; // import styling for the timer component
 
 function TimerTest() {
-  const [sleeping, setSleeping] = useState(false); // state to determine if wake lock (using use-no-sleep) should be active or not 
+  const [noSleep, setNoSleep] = useState(false); // state to determine if wake lock (using use-no-sleep) should be active or not 
   const [timerMode, setTimerMode] = useState('countdown'); // 'countdown' or 'stopwatch'
   const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
   const [countdownTime, setCountdownTime] = useState(60000);
   const [time, setTime] = useState(countdownTime);
   const intervalTime = 500;
 
-  useNoSleep(sleeping);
+  useNoSleep(noSleep);
 
   useEffect(() => {
     let intervalId;
+
+    const handleVisibilityChange = () => {
+      if (document.visibilityState === "visible" && timerState === 'running') {
+        console.log("tab is visible and timer is running");
+        setNoSleep(true);
+      } else if (document.visibilityState === 'hidden') {
+        console.log("tab is hidden");
+        setNoSleep(false);
+      }
+    };
 
     if (timerState === 'running') {
       intervalId = setInterval(() => {
@@ -34,13 +44,20 @@ function TimerTest() {
           }
         });
       }, intervalTime);
+    } else if (timerState === 'idle') {
+      setTime(timerMode === 'countdown' ? countdownTime : 0)
     }
 
-    return () => clearInterval(intervalId);
-  }, [timerMode, timerState]);
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      clearInterval(intervalId)
+    };
+  }, [timerMode, timerState, countdownTime]);
 
   const toggleTimerMode = () => {
-    setSleeping(false); // wake lock should be deactivated when the mode is changed as the timer is also set to idle
+    setNoSleep(false); // wake lock should be deactivated when the mode is changed as the timer is also set to idle
     setTimerMode(prevMode => {
       const newMode = prevMode === 'countdown' ? 'stopwatch' : 'countdown';
       setTimerState('idle');
@@ -48,12 +65,6 @@ function TimerTest() {
       return newMode;
     });
   };
-
-  useEffect(() => {
-    if (timerState === 'idle') {
-      setTime(timerMode === 'countdown' ? countdownTime : 0);
-    }
-  }, [timerState, countdownTime, timerMode]);
 
   const formatTime = (time) => {
     const seconds = Math.floor(time / 1000) % 60;
@@ -74,12 +85,12 @@ function TimerTest() {
   };
 
   const handleStart = () => {
-    setSleeping(true);
+    setNoSleep(true);
     setTimerState('running'); // set TimerState to "running"
   }
 
   const handleIdle = () => {
-    setSleeping(false);
+    setNoSleep(false);
     setTimerState('idle'); // set TimerState to "idle"
   }
 
