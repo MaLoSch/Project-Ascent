@@ -12,7 +12,7 @@ function TimerTest() {
   const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
   const [countdownTime, setCountdownTime] = useState(60000);
   const [time, setTime] = useState(countdownTime);
-  const intervalTime = 500;
+  const intervalTime = 500; // the time by which we update our timer component
 
   useNoSleep(noSleep);
 
