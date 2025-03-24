@@ -14,7 +14,7 @@ function TimerTest() {
   const [time, setTime] = useState(countdownTime);
   const intervalTime = 500; // the time by which we update our timer component
 
-  useNoSleep(noSleep);
+  useNoSleep(noSleep); // create a no sleep object and hand it the sleep state
 
   useEffect(() => {
     let intervalId;
