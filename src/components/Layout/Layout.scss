@@ -1,6 +1,6 @@
 header, nav {
     position: fixed; // fixed position so it does not scroll
-    background-color: var(--grey-black); // set background color so elements behind are not visible
+    background-color: var(--grey-black); // set background color so elements behind (e.g. exercise list) are not visible
     width: 100%; // set width
 }
 
