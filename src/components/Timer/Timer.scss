@@ -12,6 +12,10 @@
         &.left {
             text-align: right;
         }
+
+        &.active {
+            color: var(--grey-55);
+        }
     }
 
     & .switch {
@@ -81,11 +85,11 @@
         & button {
             padding: 16px;
             flex: 0 1 25%;
-            background-color: var(--grey-black);
+            //background-color: var(--grey-black);
+            background-color: transparent;
             border: none;
             font-style: italic;
             font-size: 1rem;
-            display: flex;
             align-items: normal;
             color: var(--grey-75);
             display: flex; // use flexbox

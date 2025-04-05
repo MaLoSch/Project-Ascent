@@ -6,7 +6,7 @@ import TimeEditor from './TimerEditor/TimerEditor'; // Import the TimeEditor com
 import useNoSleep from "use-no-sleep"; // library to prevent the screen from sleeping – more here https://github.com/JoshuaKGoldberg/use-no-sleep
 import './Timer.scss'; // import styling for the timer component
 
-function TimerTest() {
+function Timer() {
   const [noSleep, setNoSleep] = useState(false); // state to determine if wake lock (using use-no-sleep) should be active or not 
   const [timerMode, setTimerMode] = useState('countdown'); // 'countdown' or 'stopwatch'
   const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
@@ -139,12 +139,12 @@ function TimerTest() {
     <>
       <section className="side-padding">
         <div className="timer-mode">
-          <p className="timer-label left">Countdown</p>
+          <p className={`timer-label left ${timerMode === "countdown" ? "active" : ""}`}>Countdown</p>
           <label className="switch">
             <input type="checkbox" onClick={toggleTimerMode} />
             <span className="slider round" />
           </label>
-          <p className="timer-label">Stopwatch</p>
+          <p className={`timer-label ${timerMode === "stopwatch" ? "active" : ""}`}>Stopwatch</p>
         </div>
       </section>
 
@@ -159,4 +159,4 @@ function TimerTest() {
   );
 }
 
-export default TimerTest;
+export default Timer;

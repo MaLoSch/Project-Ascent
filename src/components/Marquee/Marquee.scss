@@ -1,5 +1,5 @@
 .marquee-container {
-    background-color: var(--grey-black); // set background color of the marquee
+    background-color: var(--grey-black); // background color so elements behind (e.g. exercise list) are not visible
     height: auto; // set height of the marquee
     display: flex;
     flex-direction: row; // items next to each other
