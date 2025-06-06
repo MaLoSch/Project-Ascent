@@ -391,6 +391,27 @@
       "equipment": ["Climbing wall"],
       "variation": [],
       "notification": false
+    },
+    {
+      "name": "One arm pull down with lock off",
+      "id": 22,
+      "description": "Improve your upper body strength with a one arm pull down and lock off.",
+      "howTo": [
+        "On a cable machine, pull down with a single arm until your hand is on chest height.",
+        "From there, transition to a push down motion until your hand is on hip height.",
+        "Keep your arm in this position for three seconds.",
+        "Reverse the motion in a controlled manner. This is one repetition.",
+        "Do 8-10 reps for one arm to complete a set. Do the second set with the other arm."
+      ],
+      "info": "You can vary the difficulty by difficulty by varying the distance of foothold and by hanging of straight arms or locking off.",
+      "heroImage": "none",
+      "effect": ["core"],
+      "time": "5 minutes",
+      "effort": "7 RPE",
+      "level": "2",
+      "equipment": ["Pulley System"],
+      "variation": [],
+      "notification": false
     }
   ]
 }

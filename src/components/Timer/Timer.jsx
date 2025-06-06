@@ -1,69 +1,45 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { useTimer } from './TimerContext/TimerContext';
 import PlayArrowOutlinedIcon from '@mui/icons-material/PlayArrowOutlined';
 import StopOutlinedIcon from '@mui/icons-material/StopOutlined';
 import PauseOutlinedIcon from '@mui/icons-material/PauseOutlined';
-import TimeEditor from './TimerEditor/TimerEditor'; // Import the TimeEditor component
-import useNoSleep from "use-no-sleep"; // library to prevent the screen from sleeping – more here https://github.com/JoshuaKGoldberg/use-no-sleep
-import './Timer.scss'; // import styling for the timer component
+import TimeEditor from './TimerEditor/TimerEditor';
+import useNoSleep from "use-no-sleep";
+import './Timer.scss';
 
 function Timer() {
-  const [noSleep, setNoSleep] = useState(false); // state to determine if wake lock (using use-no-sleep) should be active or not 
-  const [timerMode, setTimerMode] = useState('countdown'); // 'countdown' or 'stopwatch'
-  const [timerState, setTimerState] = useState('idle'); // 'idle', 'running', 'paused', 'finished'
-  const [countdownTime, setCountdownTime] = useState(60000);
-  const [time, setTime] = useState(countdownTime);
-  const intervalTime = 500; // the time by which we update our timer component
+  const [noSleep, setNoSleep] = useState(false);
+  const {
+    time,
+    setTime,
+    timerState,
+    setTimerState,
+    timerMode,
+    setTimerMode,
+    countdownTime,
+    setCountdownTime
+  } = useTimer();
 
-  useNoSleep(noSleep); // create a no sleep object and hand it the sleep state
-
-  useEffect(() => {
-    let intervalId;
-
-    const handleVisibilityChange = () => {
-      if (document.visibilityState === "visible" && timerState === 'running') {
-        console.log("tab is visible and timer is running");
-        setNoSleep(true);
-      } else if (document.visibilityState === 'hidden') {
-        console.log("tab is hidden");
-        setNoSleep(false);
-      }
-    };
-
-    if (timerState === 'running') {
-      intervalId = setInterval(() => {
-        setTime(prevTime => {
-          if (timerMode === 'countdown') {
-            if (prevTime > 0) {
-              return prevTime - intervalTime;
-            } else {
-              setTimerState('finished');
-              return 0;
-            }
-          } else {
-            return prevTime + intervalTime;
-          }
-        });
-      }, intervalTime);
-    } else if (timerState === 'idle') {
-      setTime(timerMode === 'countdown' ? countdownTime : 0)
-    }
-
-    document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
-      clearInterval(intervalId)
-    };
-  }, [timerMode, timerState, countdownTime]);
+  useNoSleep(noSleep);
 
   const toggleTimerMode = () => {
-    setNoSleep(false); // wake lock should be deactivated when the mode is changed as the timer is also set to idle
+    setNoSleep(false);
     setTimerMode(prevMode => {
       const newMode = prevMode === 'countdown' ? 'stopwatch' : 'countdown';
       setTimerState('idle');
       setTime(newMode === 'countdown' ? countdownTime : 0);
       return newMode;
     });
+  };
+
+  const handleStart = () => {
+    setNoSleep(true);
+    setTimerState('running');
+  };
+
+  const handleIdle = () => {
+    setNoSleep(false);
+    setTimerState('idle');
   };
 
   const formatTime = (time) => {
@@ -84,29 +60,19 @@ function Timer() {
     );
   };
 
-  const handleStart = () => {
-    setNoSleep(true);
-    setTimerState('running'); // set TimerState to "running"
-  }
-
-  const handleIdle = () => {
-    setNoSleep(false);
-    setTimerState('idle'); // set TimerState to "idle"
-  }
-
   const getControls = () => {
     switch (timerState) {
       case 'idle':
         return (
           <button onClick={handleStart}>
-            <PlayArrowOutlinedIcon fontSize='.75rem' />
+            <PlayArrowOutlinedIcon fontSize=".75rem" />
             <span className="button-label">Start</span>
           </button>
         );
       case 'running':
         return (
           <button onClick={() => setTimerState('paused')}>
-            <PauseOutlinedIcon fontSize='.75rem' />
+            <PauseOutlinedIcon fontSize=".75rem" />
             <span className="button-label">Pause</span>
           </button>
         );
@@ -114,11 +80,11 @@ function Timer() {
         return (
           <>
             <button onClick={() => setTimerState('running')}>
-              <PlayArrowOutlinedIcon fontSize='.75rem' />
+              <PlayArrowOutlinedIcon fontSize=".75rem" />
               <span className="button-label">Resume</span>
             </button>
             <button onClick={handleIdle}>
-              <StopOutlinedIcon fontSize='.75rem' />
+              <StopOutlinedIcon fontSize=".75rem" />
               <span className="button-label">Reset</span>
             </button>
           </>
@@ -126,7 +92,7 @@ function Timer() {
       case 'finished':
         return (
           <button onClick={handleIdle}>
-            <StopOutlinedIcon fontSize='.75rem' />
+            <StopOutlinedIcon fontSize=".75rem" />
             <span className="button-label">Reset</span>
           </button>
         );
@@ -148,7 +114,7 @@ function Timer() {
         </div>
       </section>
 
-      <section className="timer-container full-height side-padding">
+      <section className={`${timerState === "running" ? "running" : ""} timer-container full-height side-padding`}>
         <div className="timer-counter">
           <h1 className="time">{formatTime(time)}</h1>
         </div>
