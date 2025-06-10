@@ -4,6 +4,10 @@ header, nav {
     width: 100%; // set width
 }
 
+header, nav, main {
+    transition: background-color .5s ease-in-out; // set transition effect for the three main layout components
+}
+
 header {
     z-index: 1;
     top: 0; // position at top 
