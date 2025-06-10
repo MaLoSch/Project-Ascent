@@ -114,7 +114,7 @@ function Timer() {
         </div>
       </section>
 
-      <section className={`${timerState === "running" ? "running" : ""} timer-container full-height side-padding`}>
+      <section className={"timer-container full-height side-padding"}>
         <div className="timer-counter">
           <h1 className="time">{formatTime(time)}</h1>
         </div>

@@ -76,11 +76,6 @@
     align-items: center;
     gap: 16px;
     background-color: transparent;
-    transition: background-color .5s ease-in-out;
-
-    &.running {
-        background-color: var(--orange-35);
-    }
 
     & .timer-controls {
         display: flex;

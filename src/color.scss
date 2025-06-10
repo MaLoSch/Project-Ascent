@@ -33,3 +33,11 @@
     --blue-15: hsl(200, 89%, 15%);
     --blue-black: hsl(200, 89%, 5%);
 }
+
+.standard {
+  background-color: var(--grey-black);
+}
+
+.running {
+  background-color: var(--orange-35);
+}
