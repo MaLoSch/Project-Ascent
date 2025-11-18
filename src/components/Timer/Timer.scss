@@ -107,11 +107,27 @@
         }
     }
 
-    & .timer-counter {
-        color: var(--grey-55);
+    & .timer-counter,
+      .timer-sets,
+      .timer-reps {
+        color: var(--grey-85);
 
-        & .time {
-            font-size: 4rem;
+        & .set-time,
+          .rep-time,
+          .counter-time {
+            font-size: 3rem;
+
+            & span {
+
+                &.millis {
+                    font-size: 1rem;
+                }
+
+                & input {
+                    width: 80px; // This needs to be improved. Auto and Inherit does not work. Figure out how to make this so it only is as wide as it needs to be without taking over the whole screen
+                    font-size: inherit;
+                }
+            }
         }
     }
 }

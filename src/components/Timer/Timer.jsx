@@ -42,7 +42,8 @@ function Timer() {
     setTimerState('idle');
   };
 
-  const formatTime = (time) => {
+  const formatCountdownTime = (time) => {
+    const millis = Math.floor(time % 1000) / 10;
     const seconds = Math.floor(time / 1000) % 60;
     const minutes = Math.floor(time / 60000) % 60;
     const hours = Math.floor(time / 3600000);
@@ -56,6 +57,7 @@ function Timer() {
         <span>{String(hours).padStart(2, '0')}</span>:
         <span>{String(minutes).padStart(2, '0')}</span>:
         <span>{String(seconds).padStart(2, '0')}</span>
+        <span className="millis">{String(millis).padStart(2, '0')}</span>
       </>
     );
   };
@@ -115,8 +117,21 @@ function Timer() {
       </section>
 
       <section className={"timer-container full-height side-padding"}>
+        
+        {/**
+
+        <div className="timer-sets">
+          <h1 className="set-time">{formatTime(time)}</h1>
+        </div>
+
+        <div className="timer-reps">
+          <h1 className="rep-time">{formatTime(time)}</h1>
+        </div>
+
+        */}
+
         <div className="timer-counter">
-          <h1 className="time">{formatTime(time)}</h1>
+          <h1 className="counter-time">{formatCountdownTime(time)}</h1>
         </div>
 
         <div className="timer-controls">{getControls()}</div>

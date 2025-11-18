@@ -41,7 +41,7 @@ const TimeEditor = ({ time, setTime }) => {
   
 
   return (
-    <div className="time">
+    <>
       {["hours", "minutes", "seconds"].map((field, index) => (
         <span key={field}>
           {editingField === field ? (
@@ -54,7 +54,7 @@ const TimeEditor = ({ time, setTime }) => {
               onKeyDown={handleKeyDown}
               min={editingField === "hours" ? undefined : 0}
               max={editingField === "hours" ? undefined : 59}
-              style={{ width: "80px"}}
+              style={{ /** Add styles here if required */ }}
               className="time"
             />
           ) : (
@@ -63,7 +63,7 @@ const TimeEditor = ({ time, setTime }) => {
           {index < 2 && <span>:</span>}
         </span>
       ))}
-    </div>
+    </>
   );
 };
 
