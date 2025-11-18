@@ -1,416 +1,190 @@
 {
   "exercises": [
     {
-      "name": "Arc 10",
+      "name": "Easy Traversing Warm-Up",
       "id": 0,
-      "description": "A great endurance exercise to keep you moving for extended periods.",
-      "howTo": ["Perform continuous, low-intensity climbing for 10 minutes on easy terrain, focusing on smooth, controlled movements. This helps build endurance without straining muscles."],
-      "info": "short additional information",
-      "heroImage": "arc10",
-      "effect": ["endurance"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "1 on 1 off active",
-      "id": 1,
-      "description": "Alternating between activity and rest helps maintain balance and stamina.",
-      "howTo": ["Alternate between one minute of climbing and one minute of rest. During the active phase, climb steadily, and use the rest phase to recover while staying active with light movements."],
-      "info": "short additional information",
-      "heroImage": "1on1off",
-      "effect": ["endurance"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "50:50",
-      "id": 2,
-      "description": "This training method splits your efforts equally for better results.",
-      "howTo": ["Climb for 50% of your maximum intensity for an extended period, then rest for an equal amount of time. This alternating pattern trains both endurance and power recovery."],
-      "info": "short additional information",
-      "heroImage": "50-50",
-      "effect": ["unknown"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "7:3s",
-      "id": 3,
-      "description": "Focus on short bursts of effort with this high-intensity drill.",
-      "howTo": ["Hang on a fingerboard for 7 seconds, then rest for 3 seconds. Repeat for several cycles. This helps build finger strength and endurance for short, intense holds."],
-      "info": "short additional information",
-      "heroImage": "73s",
-      "effect": ["finger strength", "endurance"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "3",
-      "equipment": ["Hangboard", "Lifting Edge"],
-      "variation": [],
-      "notification": {
-        "type": "info",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Aero 4's",
-      "id": 4,
-      "description": "Aerobic endurance is built over time with consistent pacing in this exercise.",
-      "howTo": ["Climb for 4 minutes at a low intensity without stopping. Rest for 4 minutes, then repeat. Focus on maintaining a steady pace to improve aerobic capacity."],
-      "info": "short additional information",
-      "heroImage": "aero4",
-      "effect": ["endurance", "aerobic"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Latissimus Dorsi Stretch",
-      "id": 5,
-      "description": "A stretch focused on increasing flexibility and range of motion in the back.",
-      "howTo": ["Kneel on the floor and extend your arms forward, palms down. Slowly press your chest toward the ground, stretching the sides of your back. Hold for 30 seconds, then relax."],
-      "info": "short additional information",
-      "heroImage": "latissimusDorsiStretch",
-      "effect": ["back", "stretch"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Floor"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Hip Flexor Stretch",
-      "id": 6,
-      "description": "Relieves tension in the hips and improves posture.",
-      "howTo": ["Step one leg forward into a lunge position, keeping your back leg straight. Push your hips forward to stretch the hip flexor of the back leg. Hold for 30 seconds on each side."],
-      "info": "short additional information",
-      "heroImage": "hipFlexorStretch",
-      "effect": ["hip", "stretch"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Floor"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Glute Stretch / Pigeon Pose",
-      "id": 7,
-      "description": "A deep stretch that targets the glutes, helping in mobility.",
-      "howTo": ["From a kneeling position, bring one leg forward with the knee bent and the other leg extended behind you. Lower your hips toward the floor to stretch the glute and hip muscles. Hold for 30 seconds."],
-      "info": "short additional information",
-      "heroImage": "pidgeonStretch",
-      "effect": ["glute", "stretch"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Floor"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Hamstring Stretch",
-      "id": 8,
-      "description": "An essential stretch for preventing injury in the legs.",
-      "howTo": ["Stand and bend forward at the waist, reaching toward your toes. Keep your legs straight but not locked. Hold for 30 seconds to stretch the hamstrings, then slowly return to standing."],
-      "info": "short additional information",
-      "heroImage": "hamstringStretch",
-      "effect": ["hamstring", "stretch"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Floor"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Run",
-      "id": 9,
-      "description": "Running builds both physical endurance and mental resilience.",
-      "howTo": ["Start with a warm-up walk or light jog. Increase speed gradually, maintaining a steady pace for the duration of the run. Cool down by walking or jogging at a slower pace."],
-      "info": "short additional information",
-      "heroImage": "run",
-      "effect": ["endurance"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Treadmill", "Road", "Trail"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "MS RPE",
-      "id": 10,
-      "description": "A method for assessing workout intensity based on perceived exertion.",
-      "howTo": ["Perform an exercise while monitoring your level of exertion on a scale of 1-10, with 10 being the most intense. Adjust intensity according to the desired difficulty level."],
-      "info": "short additional information",
-      "heroImage": "liftPinch",
-      "effect": ["finger strength"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Pinch block"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Strength Intervals / 5x3s",
-      "id": 11,
-      "description": "Strength is built with high-effort intervals and shorter rest periods.",
-      "howTo": ["Perform 5 sets of 3 intense climbing moves or hangs, with short rest periods in between. Focus on maximal effort during each set to build power and strength."],
-      "info": "short additional information",
-      "heroImage": "strengthIntervals",
-      "effect": ["strength", "power"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Board climbing - Max efforts",
-      "id": 12,
-      "description": "Push yourself to the limit with maximum effort climbs on the board.",
-      "howTo": ["Climb on a training board using difficult holds or sequences. Perform short, intense sessions focused on maximal effort with longer rest periods to allow full recovery between attempts."],
-      "info": "short additional information",
-      "heroImage": "boardClimbing",
-      "effect": ["strength", "power", "core"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "3",
-      "equipment": ["Climbing board", "System wall", "Spray wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Boulder Pyramid",
-      "id": 13,
-      "description": "A structured climbing sequence that helps with strength and technique.",
-      "howTo": ["Climb increasingly difficult boulders in a pyramid sequence (e.g., easy, medium, hard, medium, easy). This method builds both strength and technique as you vary difficulty and intensity."],
-      "info": "short additional information",
-      "heroImage": "boulderPyramid",
-      "effect": ["endurance", "power", "core"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Plank",
-      "id": 14,
-      "description": "An exercise where you hold your body straight and parallel to the floor while resting on your toes and elbows.",
-      "howTo": ["From lying face down on a mat and place your elbows under your shoulders. Place your toes onto the mat and then push your forearms as you raise your body from the mat. Engage your abdominal muscles and try and form a straight line with your whole body. Keep your gaze down while taking steady, even breaths."],
-      "info": "short additional information",
-      "heroImage": "plank",
-      "effect": ["core"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Floor"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "ENOM",
-      "id": 15,
-      "description": "Compared to classic 4x4s, ENOMs (Every Minute On the Minute) may allow you to improve your anaerobic endurance for a longer sustained time.",
-      "howTo": ["Choose a moderate boulder and set a timer to 1 minute. Climb the boulder and rest for the remainder of the minute. At the start of the next minute, climb the boulder again. Do this for 4 to 10 minutes to complete a set and aim for 1-3 sets."],
-      "info": "short additional information",
-      "heroImage": "enom",
-      "effect": ["anaerobic endurance", "strength endurance"],
-      "time": "45 min",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Boulder Mileage",
-      "id": 16,
-      "description": "A high volume bouldering session that should be performed on a boulder wall or steep board.",
-      "howTo": ["Aim to complete 20 boulders that will achieve the correct stimulus. You have an hour to attempt and complete all 20 boulders. That means you have roughly 3 minutes for each boulder. Attempt to flash every problem but you can have a second attempt, if you fail. Once the boulder has been completed or you failed a on your second attempt, you can rest for the remainder of the three minutes. You get the most out of this exercise if you are prepared to push yourself consistently."],
-      "info": "short additional information",
+      "description": "A gentle climbing warm-up that activates muscles and prepares the body for harder climbing.",
+      "howTo": [
+        "Choose a low-angle section of the wall with large holds.",
+        "Traverse sideways for 2–3 minutes, staying on easy terrain.",
+        "Focus on smooth, controlled movement and good footwork.",
+        "Repeat on different wall angles to activate a variety of muscles."
+      ],
+      "info": "Avoid rushing this warm-up. Gradually increase intensity as you feel your body warming up.",
       "heroImage": "none",
-      "effect": ["strength endurance"],
-      "time": "60 minutes",
-      "effort": "8/10 RPE",
-      "level": "1",
-      "equipment": ["Spray wall", "System wall", "Boulder wall", "Climbing wall", "Climbing board"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Shoulder Rotations",
-      "id": 17,
-      "description": "Exercise to strengthen your shoulder.",
-      "howTo": [
-        "Prone on a bench, engage your scapula and hold the dumbbell with your hand with your elbow out at 90 degrees from your body and with a 90 degree bend at the elbow.",
-        "Lower the weight down to the floor and then bring the weight back up to the starting position. This is one rep.", 
-        "Focus on rotating from your shoulder rather than your elbow and maintain the 90 bend at the elbow throughout the whole movement.",
-        "Every repetition should be performed with good form, in full range of motion and in a controlled way.",
-        "Keep your scapula enfafed and don't allow winging in order to get a greater range of movement. Your range of movement may differ from the one in the images."
-      ],
-      "info": "short additional information",
-      "heroImage": "none",
-      "effect": ["conditioning"],
-      "time": "5 minutes",
-      "effort": "12 RM",
-      "level": "1",
-      "equipment": ["Dumbbell", "Bench"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Contrast",
-      "id": 18,
-      "description": "Exercise to improve various aspects of your climbing.",
-      "howTo": [
-        "Choose 8 boulders which should be semi-difficult for you. The boulders should not require any dynamic moves.",
-        "Climb each boulder 3 times. The first time as static as possible. The second time as dynamic as possible. And the third time should be an ideal blend of the static and dynamic attempts.", 
-        "Be aware of your breathing as it should be in harmony with your climbing rythm and avoid holding your breath for longer periods.",
-        "Take a short rest between attempts and a longer rest between boulders."
-      ],
-      "info": "short additional information",
-      "heroImage": "contrast",
-      "effect": ["lock-off", "core", "tension", "technique", "coordination", "footwork"],
-      "time": "90 minutes",
-      "effort": "7 RPE",
-      "level": "1",
-      "equipment": ["Climbing wall"],
-      "variation": [],
-      "notification": {
-        "type": "warning",
-        "msg": "Do not attempt this exercise when exhausted or at the end of your session."
-      }
-    },
-    {
-      "name": "Match",
-      "id": 19,
-      "description": "Exercise to improve your climbing technique and endurance.",
-      "howTo": [
-        "Pick 4 semi difficult boulders and climb each 2-3 times.",
-        "While climbing, make sure to match each hold.",
-        "Take a 1 to 2 minute rest between repetitions and 5 minute rest between sets."
-      ],
-      "info": "short additional information",
-      "heroImage": "match",
-      "effect": ["technique", "footwork", "endurance"],
-      "time": "40 minutes",
-      "effort": "7 RPE",
-      "level": "2",
-      "equipment": ["Climbing wall"],
-      "variation": [],
-      "notification": false
-    },
-    {
-      "name": "Tic Tac Toe",
-      "id": 20,
-      "description": "This exercise improves your body tension and your footwork. Depending on the holds you can also work your arms for endurance gains.",
-      "howTo": [
-        "Pick 2 holds on a system wall which are about shoulder width apart and do not have an incut shape. You should be able to hang for about 20 seconds on those holds.",
-        "Hang on the holds and try to catch a hold with your left foot far down on your left side.",
-        "Return to the center and then catch a hold with your left foot on hip height of your left side.",
-        "Repeat this one more time with a hold overhead on left side.",
-        "Repeat the same on the right hand side with three holds on different levels. Once finished, you have done 1 rep.",
-        "Do 3-4 repetitions and two sets with a two minute rest between sets."
-      ],
-      "info": "",
-      "heroImage": "none",
-      "effect": ["footwork", "endurance", "core"],
+      "effect": ["Warm-Up", "Movement Efficiency", "Mobility"],
       "time": "10 minutes",
-      "effort": "7 RPE",
-      "level": "2",
-      "equipment": ["System wall"],
-      "variation": [],
+      "effort": "3/10",
+      "equipment": ["Climbing wall"],
+      "notification": false
+    },
+    {
+      "name": "Dead Hangs",
+      "id": 1,
+      "description": "A finger strength exercise performed by hanging statically from a hangboard.",
+      "howTo": [
+        "Warm up thoroughly before starting.",
+        "Grip a set of edges on the hangboard using both hands.",
+        "Hang for 7–10 seconds, keeping shoulders engaged.",
+        "Rest for 1–2 minutes between hangs and repeat for several sets."
+      ],
+      "info": "Focus on shoulder engagement and avoid shrugging.",
+      "heroImage": "none",
+      "effect": ["Finger Strength", "Grip Endurance"],
+      "time": "15 minutes",
+      "effort": "8/10",
+      "equipment": ["Hangboard"],
       "notification": {
         "type": "warning",
         "msg": "Do not attempt this exercise when exhausted or at the end of your session."
       }
     },
     {
-      "name": "Diagonal",
-      "id": 21,
-      "description": "Improve your body tension by hanging with only two limbs in steep terrain.",
+      "name": "4x4s",
+      "id": 2,
+      "description": "A high-intensity climbing drill designed to improve power endurance by simulating sustained effort.",
       "howTo": [
-        "Pick a good hold directly at the edge of the roof.",
-        "Hang off the hold with both of your arms and pick a far away foot hold with your right foot.",
-        "Now let go off your right hand so you are effectively hanging off your left hand and your right foot.",
-        "Hold this position for 3-5 seconds",
-        "Switch foot and hand afterwards. This is one rep.",
-        "Do 5-8 reps for one set. Do two sets total with a 2 minute rest between."
+        "Choose four boulder problems of moderate difficulty that you can complete when fresh.",
+        "Prefer slightly overhanging or vertical terrain to build endurance.",
+        "Climb the first problem, rest briefly, and move immediately to the next.",
+        "Complete all four problems, rest 2–4 minutes, then repeat three more times."
       ],
-      "info": "You can vary the difficulty by difficulty by varying the distance of foothold and by hanging of straight arms or locking off.",
+      "info": "Maintain good technique even as fatigue builds.",
       "heroImage": "none",
-      "effect": ["core"],
-      "time": "5 minutes",
-      "effort": "7 RPE",
-      "level": "2",
-      "equipment": ["Climbing wall"],
-      "variation": [],
+      "effect": ["Power Endurance", "Recovery Under Fatigue", "Route Pacing"],
+      "time": "25 minutes",
+      "effort": "8/10",
+      "equipment": ["System board", "Spray wall", "Training board (e.g. MoonBoard, Kilter Board)"],
+      "notification": {
+        "type": "warning",
+        "msg": "Avoid this exercise when tired; it places high stress on fingers and forearms."
+      }
+    },
+    {
+      "name": "Lock-Off Holds",
+      "id": 3,
+      "description": "An upper-body strength exercise that builds control and stability during static moves.",
+      "howTo": [
+        "Find a section of wall or system board with good holds.",
+        "Pull up until your arm forms a 90-degree angle and hold the position for 3–5 seconds.",
+        "Lower slowly and repeat on the other arm.",
+        "Perform 3–5 reps per side for several sets."
+      ],
+      "info": "Engage your core to prevent swinging or shoulder strain.",
+      "heroImage": "none",
+      "effect": ["Lock-Off Strength", "Upper Body Control"],
+      "time": "15 minutes",
+      "effort": "7/10",
+      "equipment": ["Climbing wall", "System board"],
       "notification": false
     },
     {
-      "name": "One arm pull down with lock off",
-      "id": 22,
-      "description": "Improve your upper body strength with a one arm pull down and lock off.",
+      "name": "Foot-On Fingerboard Repeaters",
+      "id": 4,
+      "description": "A finger endurance exercise performed on a hangboard with partial weight support from your feet.",
       "howTo": [
-        "On a cable machine, pull down with a single arm until your hand is on chest height.",
-        "From there, transition to a push down motion until your hand is on hip height.",
-        "Keep your arm in this position for three seconds.",
-        "Reverse the motion in a controlled manner. This is one repetition.",
-        "Do 8-10 reps for one arm to complete a set. Do the second set with the other arm."
+        "Place your feet on a chair or footholds to reduce load.",
+        "Grip the edges and hang for 7 seconds, then rest for 3 seconds.",
+        "Repeat this hang/rest cycle 6 times per set.",
+        "Rest 2–3 minutes between sets."
       ],
-      "info": "You can vary the difficulty by difficulty by varying the distance of foothold and by hanging of straight arms or locking off.",
+      "info": "Adjust foot support to control intensity.",
       "heroImage": "none",
-      "effect": ["core"],
-      "time": "5 minutes",
-      "effort": "7 RPE",
-      "level": "2",
-      "equipment": ["Pulley System"],
-      "variation": [],
+      "effect": ["Finger Endurance", "Grip Control"],
+      "time": "20 minutes",
+      "effort": "6/10",
+      "equipment": ["Hangboard", "Chair or foot support"],
+      "notification": {
+        "type": "warning",
+        "msg": "Avoid doing this exercise when your fingers are sore or fatigued."
+      }
+    },
+    {
+      "name": "Core Tension Leg Raises",
+      "id": 5,
+      "description": "A core-strength exercise that improves body tension for overhangs and roof climbing.",
+      "howTo": [
+        "Hang from a pull-up bar or jug holds.",
+        "Engage your core and lift your legs to hip height or higher.",
+        "Lower them slowly with control and repeat.",
+        "Perform 3 sets of 8–10 reps."
+      ],
+      "info": "Keep your body still and avoid swinging.",
+      "heroImage": "none",
+      "effect": ["Core Strength", "Body Tension"],
+      "time": "10 minutes",
+      "effort": "7/10",
+      "equipment": ["Pull-up bar", "Jug holds"],
+      "notification": false
+    },
+    {
+      "name": "Downclimbing Drills",
+      "id": 6,
+      "description": "A control and endurance exercise where you climb down routes to improve efficiency and technique.",
+      "howTo": [
+        "Climb an easy problem or route to the top.",
+        "Downclimb using the same holds in reverse, maintaining slow and deliberate movements.",
+        "Focus on smooth foot placement and control.",
+        "Repeat 3–5 times."
+      ],
+      "info": "Helps improve route reading and control under fatigue.",
+      "heroImage": "none",
+      "effect": ["Endurance", "Movement Efficiency", "Technique"],
+      "time": "15 minutes",
+      "effort": "5/10",
+      "equipment": ["Climbing wall"],
+      "notification": false
+    },
+    {
+      "name": "Tension Plank with Shoulder Taps",
+      "id": 7,
+      "description": "A core and shoulder stability exercise that enhances body control on the wall.",
+      "howTo": [
+        "Start in a plank position with your body fully straight.",
+        "Lift one hand to tap the opposite shoulder while keeping your hips stable.",
+        "Alternate sides for 20–30 seconds per round.",
+        "Rest 30 seconds and repeat for 3–4 rounds."
+      ],
+      "info": "Maintain tension through your core and avoid rotation.",
+      "heroImage": "none",
+      "effect": ["Core Stability", "Shoulder Strength"],
+      "time": "10 minutes",
+      "effort": "6/10",
+      "equipment": ["Mat or floor space"],
+      "notification": false
+    },
+    {
+      "name": "ARC Training (Aerobic Restoration and Capillarity)",
+      "id": 8,
+      "description": "A low-intensity endurance exercise for building aerobic capacity in the forearms.",
+      "howTo": [
+        "Climb continuously on easy terrain for 15–30 minutes without reaching failure.",
+        "Stay in a comfortable zone where you can maintain a conversation.",
+        "Focus on smooth, efficient movement and relaxed grip."
+      ],
+      "info": "Excellent for base endurance during training cycles.",
+      "heroImage": "none",
+      "effect": ["Endurance", "Technique", "Movement Efficiency"],
+      "time": "20–30 minutes",
+      "effort": "4/10",
+      "equipment": ["Climbing wall", "Spray wall"],
+      "notification": false
+    },
+    {
+      "name": "Yoga for Climbers Cool-Down",
+      "id": 9,
+      "description": "A cool-down session focused on flexibility, mobility, and recovery after climbing.",
+      "howTo": [
+        "Include poses such as downward dog, pigeon pose, and shoulder stretches.",
+        "Hold each pose for 20–30 seconds, focusing on slow breathing.",
+        "Move gently and avoid forcing range of motion."
+      ],
+      "info": "Promotes recovery and reduces muscle tension after training.",
+      "heroImage": "none",
+      "effect": ["Mobility", "Recovery", "Flexibility"],
+      "time": "10–15 minutes",
+      "effort": "2/10",
+      "equipment": ["Yoga mat"],
       "notification": false
     }
   ]
