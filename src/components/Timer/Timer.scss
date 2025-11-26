@@ -74,7 +74,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    gap: 32px;
     background-color: transparent;
 
     & .timer-controls {
@@ -104,6 +104,35 @@
             & .button-label {
                 margin: 0 0 0 4px;
               }
+        }
+    }
+
+    & .settings {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        & .reps,
+        & .sets {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+
+            & h3 {
+                text-align: center;
+            }
+
+            & .test {
+                display: flex;
+                align-items: center;
+                padding-top: 4px;
+                gap: 8px;
+
+                & button {
+                    height: 36px;
+                    width: 36px;
+                }
+            }
         }
     }
 

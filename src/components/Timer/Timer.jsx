@@ -118,19 +118,23 @@ function Timer() {
 
       <section className={"timer-container full-height side-padding"}>
 
-        <div className={`controls`}>
+        <div className={`settings`}>
           <div className={`reps`}>
             <h3>Reps</h3>
-            <button>+</button>
-            <div className={`repCounter`}>Number of reps</div>
-            <button>-</button>
+            <div className={`test`}>
+              <button>-</button>
+              <div className={`repCounter`}>Number of reps</div>
+              <button>+</button>
+            </div>
           </div>
 
           <div className={`sets`}>
             <h3>Sets</h3>
-            <button>+</button>
-            <div className={`setCounter`}>Number of sets</div>
-            <button>-</button>
+            <div className={`test`}>
+              <button>-</button>
+              <div className={`setCounter`}>Number of sets</div>
+              <button>+</button>
+            </div>
           </div>
 
         </div>
