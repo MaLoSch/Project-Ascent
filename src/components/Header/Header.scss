@@ -5,6 +5,7 @@
     display: flex;
     width: 100%;
     background-color: inherit; // background color so elements behind (e.g. exercise list) are not visible
+    transition: inherit; // inherit the transition from the parent element
     justify-content: space-between;
     line-height: 12px;
     font-size: .75rem;
