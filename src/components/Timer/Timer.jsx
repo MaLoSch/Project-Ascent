@@ -10,8 +10,8 @@ import './Timer.scss';
 function Timer() {
   const [noSleep, setNoSleep] = useState(false);
   const {
-    time,
-    setTime,
+    activeTime,
+    setActiveTime,
     timerState,
     setTimerState,
     timerMode,
@@ -27,7 +27,7 @@ function Timer() {
     setTimerMode(prevMode => {
       const newMode = prevMode === 'countdown' ? 'stopwatch' : 'countdown';
       setTimerState('idle');
-      setTime(newMode === 'countdown' ? countdownTime : 0);
+      setActiveTime(newMode === 'countdown' ? countdownTime : 0);
       return newMode;
     });
   };
@@ -150,7 +150,7 @@ function Timer() {
         */}
 
         <div className="timer-counter">
-          <h1 className="counter-time">{formatCountdownTime(time)}</h1>
+          <h1 className="counter-time">{formatCountdownTime(activeTime)}</h1>
         </div>
 
         <div className="timer-controls">{getControls()}</div>
