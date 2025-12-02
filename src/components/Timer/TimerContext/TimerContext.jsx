@@ -4,10 +4,17 @@ export const TimerContext = createContext();
 export const useTimer = () => useContext(TimerContext);
 
 export const TimerProvider = ({ children }) => {
-  const [time, setTime] = useState(0);
-  const [timerState, setTimerState] = useState('idle');
+  //const [time, setTime] = useState(0); // This is the time that goes down every interval
+  const [activeTime, setActiveTime] = useState(0); // the time of the current phase (exercise, repRest, setRest)
+  const [timerState, setTimerState] = useState('idle'); // do we still need this? (idle, finished, running, paused)
   const [timerMode, setTimerMode] = useState('countdown'); // Needed to distinguish mode
   const [countdownTime, setCountdownTime] = useState(60000); // 1 min
+  const [timerPhase, setTimerPhase] = useState('idle'); // Set the timer phase (exerise, repRest, setRest, idle, finished)
+  const [reps, setReps] = useState(1); // storing the number of reps
+  const [sets, setSets] = useState(1); // setting the number of sets
+  const [exerciseDuration, setExerciseDuration] = useState(10000); // default time for the exericise is 10 seconds. This will be overwritten by the exercise
+  const [restDurationRep, setRestDurationRep] = useState(10000); // default time for the rep rest duration. This will be overwritten by the exercise
+  const [restDurationSet, setRestDurationSet] = useState(10000); // default time for the set rest duration. This will be overwritten by the exercise
   const intervalTime = 10;
 
   // Define a function `playBeep` using `useCallback` so it doesn't get recreated on every render
@@ -55,46 +62,50 @@ const playBeep = useCallback((type) => {
 }, []);
 
   useEffect(() => {
-    let intervalId;
+  let intervalId;
 
-    if (timerState === 'running') {
-      intervalId = setInterval(() => {
-        setTime(prevTime => {
-          if (timerMode === 'countdown') {
-            if (prevTime > 0) {
-              // if less than three seconds are left AND on the second exactly, call the beep function
-              if(prevTime <= 3000 && prevTime % 1000 == 0) {
-                playBeep("short");
-              }
-              return prevTime - intervalTime;
-            } else {
-              playBeep("long");
-              setTimerState('finished');
-              return 0;
+  if (timerState === "running") {
+    intervalId = setInterval(() => {
+      setActiveTime(prevTime => {
+        if (timerMode === "countdown") {
+          if (prevTime > 0) {
+            // beep at :3000, :2000, :1000
+            if (prevTime <= 3000 && prevTime % 1000 === 0) {
+              playBeep("short");
             }
+            return prevTime - intervalTime;
           } else {
-            return prevTime + intervalTime;
+            playBeep("long");
+            setTimerState("finished");
+            return 0;
           }
-        });
-      }, intervalTime);
-    } else if (timerState === 'idle') {
-      setTime(timerMode === 'countdown' ? countdownTime : 0);
-    }
+        } else {
+          return prevTime + intervalTime;
+        }
+      });
+    }, intervalTime);
+  }
 
-    return () => clearInterval(intervalId);
-  }, [
-    timerState,
-    timerMode,
-    countdownTime,
-    playBeep,
-  ]);
+  // Reset time when switching back to idle mode
+  if (timerState === "idle") {
+    setActiveTime(timerMode === "countdown" ? countdownTime : 0);
+  }
+
+  return () => clearInterval(intervalId);
+}, [timerState, timerMode, countdownTime, playBeep]);
 
   return (
     <TimerContext.Provider value={{
-      time, setTime,
+      activeTime, setActiveTime,
       timerState, setTimerState,
       timerMode, setTimerMode,
-      countdownTime, setCountdownTime
+      countdownTime, setCountdownTime,
+      timerPhase, setTimerPhase,
+      reps, setReps,
+      sets, setSets,
+      exerciseDuration, setExerciseDuration,
+      restDurationRep, setRestDurationRep,
+      restDurationSet, setRestDurationSet,
     }}>
       {children}
     </TimerContext.Provider>

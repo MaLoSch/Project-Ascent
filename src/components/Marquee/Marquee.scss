@@ -1,5 +1,6 @@
 .marquee-container {
     background-color: inherit; // background color so elements behind (e.g. exercise list) are not visible
+    transition: inherit; // inherit the transition from the parent element
     height: auto; // set height of the marquee
     display: flex;
     flex-direction: row; // items next to each other
@@ -10,7 +11,7 @@
 }
 
 .marquee-container p {
-    animation: marquee infinite 21s linear; // animation settings
+    animation: marquee infinite 13s linear; // animation settings
     color: var(--grey-35); // secondary type color
     font-size: 0.75rem; // 75% of base font size
     letter-spacing: .25px; // letter spacing for the marquee paragraphs

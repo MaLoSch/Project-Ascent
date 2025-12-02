@@ -3,7 +3,7 @@ import "./Marquee.scss"
 function Marquee(props) {
 
     const text = props.children;
-    const count = 55;
+    const count = 21;
     // should figure out how to do this based on the window length divided by item length
     const marqueeArray = Array(count).fill(text);
 

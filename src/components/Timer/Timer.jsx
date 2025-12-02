@@ -10,8 +10,8 @@ import './Timer.scss';
 function Timer() {
   const [noSleep, setNoSleep] = useState(false);
   const {
-    time,
-    setTime,
+    activeTime,
+    setActiveTime,
     timerState,
     setTimerState,
     timerMode,
@@ -27,7 +27,7 @@ function Timer() {
     setTimerMode(prevMode => {
       const newMode = prevMode === 'countdown' ? 'stopwatch' : 'countdown';
       setTimerState('idle');
-      setTime(newMode === 'countdown' ? countdownTime : 0);
+      setActiveTime(newMode === 'countdown' ? countdownTime : 0);
       return newMode;
     });
   };
@@ -117,9 +117,29 @@ function Timer() {
       </section>
 
       <section className={"timer-container full-height side-padding"}>
+
+        <div className={`settings`}>
+          <div className={`reps`}>
+            <h3>Reps</h3>
+            <div className={`test`}>
+              <button>-</button>
+              <div className={`repCounter`}>Number of reps</div>
+              <button>+</button>
+            </div>
+          </div>
+
+          <div className={`sets`}>
+            <h3>Sets</h3>
+            <div className={`test`}>
+              <button>-</button>
+              <div className={`setCounter`}>Number of sets</div>
+              <button>+</button>
+            </div>
+          </div>
+
+        </div>
         
         {/**
-
         <div className="timer-sets">
           <h1 className="set-time">{formatTime(time)}</h1>
         </div>
@@ -127,11 +147,10 @@ function Timer() {
         <div className="timer-reps">
           <h1 className="rep-time">{formatTime(time)}</h1>
         </div>
-
         */}
 
         <div className="timer-counter">
-          <h1 className="counter-time">{formatCountdownTime(time)}</h1>
+          <h1 className="counter-time">{formatCountdownTime(activeTime)}</h1>
         </div>
 
         <div className="timer-controls">{getControls()}</div>
