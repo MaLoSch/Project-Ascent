@@ -20,21 +20,23 @@ export const TimerProvider = ({ children }) => {
   // Define a function `playBeep` using `useCallback` so it doesn't get recreated on every render
 const playBeep = useCallback((type) => {
   
-  console.log(type);
-  var beepTime, stopTime;
+  var beepTime, stopTime; // create local variables used for the sound
 
   switch(type) {
+    // triggered when the type is "short"
     case "short":
-      beepTime = .15;
-      stopTime = .25;
+      beepTime = .15; // set beep time
+      stopTime = .25; // set stop time
       break;
+    // triggered when the type is "long"
     case "long":
-      beepTime = .4;
-      stopTime = .5;
+      beepTime = .4; // set beep time
+      stopTime = .5; // set stop time
       break;
+    // default is used when neither long or short is called
     default:
-      beepTime = .15;
-      stopTime = .25;
+      beepTime = .15; // set beep time
+      stopTime = .25; // set stop time
       break;
   }
 
@@ -69,14 +71,16 @@ const playBeep = useCallback((type) => {
       setActiveTime(prevTime => {
         if (timerMode === "countdown") {
           if (prevTime > 0) {
-            // beep at :3000, :2000, :1000
+            // beep at 3000ms, 2000ms, 1000ms
             if (prevTime <= 3000 && prevTime % 1000 === 0) {
-              playBeep("short");
+              playBeep("short"); // beep type is short
             }
+            // calculate and return latest time
             return prevTime - intervalTime;
           } else {
-            playBeep("long");
-            setTimerState("finished");
+            // beep when countdown is over
+            playBeep("long"); // beep type is long
+            setTimerState("finished"); // set timerState to finished
             return 0;
           }
         } else {
